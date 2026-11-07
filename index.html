@@ -5,26 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <title>Тренажер тестів</title>
-  <link rel="stylesheet" href="assets/app.css?v=2" />
+  <script>
+    (function () {
+      var path = location.pathname;
+      if (!path.endsWith("/")) {
+        path = /\.[a-z0-9]+$/i.test(path) ? path.replace(/[^/]*$/, "") : path + "/";
+      }
+      var base = document.createElement("base");
+      base.href = path;
+      document.head.appendChild(base);
+    })();
+  </script>
+  <link rel="stylesheet" href="assets/app.css?v=1.0.0" />
 </head>
 <body>
   <div id="app">
     <header class="top">
       <button type="button" id="btn-home" class="ghost" hidden>← Меню</button>
-      <h1 id="title">Тренажер</h1>
+      <div class="title-wrap">
+        <h1 id="title">Тренажер</h1>
+        <p id="app-version" class="version">Версія 1.0.0</p>
+      </div>
       <span id="timer" class="timer" hidden>20:00</span>
     </header>
 
     <main id="screen-home" class="screen">
-      <p class="lead">Бібліотека 2025. Оберіть напрямок. Кожен пул має 30 питань у порядку файлу. Між пулами є перерва, таймер іде лише всередині пулу.</p>
-      <section class="block">
-        <h2>Бібліотека</h2>
-        <button type="button" class="choice selected" disabled>2025</button>
-      </section>
-      <section class="block">
-        <h2>Напрямок</h2>
-        <div id="source-list" class="stack"></div>
-      </section>
+      <p class="lead">Зараз у банку лише 2025 рік. Інших років ще немає: для них потрібні свої PDF. Оберіть пул нижче. У пулі 30 питань у порядку файлу, між пулами є перерва.</p>
+      <div id="source-list"></div>
       <p id="load-error" class="warn" hidden></p>
     </main>
 
@@ -73,6 +80,7 @@
       </div>
     </main>
   </div>
-  <script src="assets/app.js"></script>
+  <script src="assets/version.js?v=1.0.0"></script>
+  <script src="assets/app.js?v=1.0.0"></script>
 </body>
 </html>

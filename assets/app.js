@@ -15,6 +15,7 @@
     homeBtn: document.getElementById("btn-home"),
     title: document.getElementById("title"),
     timer: document.getElementById("timer"),
+    version: document.getElementById("app-version"),
     home: document.getElementById("screen-home"),
     pools: document.getElementById("screen-pools"),
     break: document.getElementById("screen-break"),
@@ -187,23 +188,48 @@
     return { correct, answered, total: pool.items.length };
   }
 
+  function makePoolButton(sourceId, pool) {
+    const stats = poolStats(pool);
+    const state = timerState(sourceId, pool.index);
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "choice" + (stats.answered ? " selected" : "");
+    button.dataset.source = sourceId;
+    button.dataset.pool = String(pool.index);
+    const label = document.createElement("span");
+    label.textContent = `Пул ${pool.index + 1} · № ${pool.from}–${pool.to}`;
+    const sub = document.createElement("span");
+    sub.className = "sub";
+    const score = document.createElement("span");
+    score.className = "score";
+    score.textContent = `${stats.correct}/${stats.total}`;
+    const clock = document.createElement("span");
+    clock.className = "clock";
+    sub.append(score, clock);
+    paintClock(clock, state);
+    button.append(label, sub);
+    button.addEventListener("click", () => {
+      session = { sourceId, poolIndex: pool.index, index: 0 };
+      openPool(pool.index);
+    });
+    return button;
+  }
+
   function renderHome() {
     session = null;
     show("home");
     el.sourceList.replaceChildren();
     for (const source of SOURCES) {
+      const section = document.createElement("section");
+      section.className = "block";
+      const heading = document.createElement("h2");
       const count = sourceQuestions(source.id).length;
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "choice";
-      const label = document.createElement("span");
-      label.textContent = source.title;
-      const sub = document.createElement("span");
-      sub.className = "sub";
-      sub.textContent = `${count} · ${source.minutes} хв`;
-      button.append(label, sub);
-      button.addEventListener("click", () => openPools(source.id));
-      el.sourceList.append(button);
+      heading.textContent = `${source.title} · ${count} · ${source.minutes} хв`;
+      const stack = document.createElement("div");
+      stack.className = "stack";
+      for (const pool of buildPools(source.id)) stack.append(makePoolButton(source.id, pool));
+      section.append(heading, stack);
+      el.sourceList.append(section);
     }
   }
 
@@ -221,28 +247,7 @@
     if (!session) return;
     const pools = buildPools(session.sourceId);
     el.poolList.replaceChildren();
-    pools.forEach((pool) => {
-      const stats = poolStats(pool);
-      const state = timerState(session.sourceId, pool.index);
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "choice" + (stats.answered ? " selected" : "");
-      button.dataset.pool = String(pool.index);
-      const label = document.createElement("span");
-      label.textContent = `Пул ${pool.index + 1} · № ${pool.from}–${pool.to}`;
-      const sub = document.createElement("span");
-      sub.className = "sub";
-      const score = document.createElement("span");
-      score.className = "score";
-      score.textContent = `${stats.correct}/${stats.total}`;
-      const clock = document.createElement("span");
-      clock.className = "clock";
-      sub.append(score, clock);
-      paintClock(clock, state);
-      button.append(label, sub);
-      button.addEventListener("click", () => openPool(pool.index));
-      el.poolList.append(button);
-    });
+    for (const pool of pools) el.poolList.append(makePoolButton(session.sourceId, pool));
   }
 
   function paintClock(node, state) {
@@ -448,14 +453,22 @@
     showSummary(timerState(session.sourceId, pool.index).left <= 0);
   }
 
+  function refreshClocks(root) {
+    for (const button of root.querySelectorAll("button[data-pool]")) {
+      const clock = button.querySelector(".clock");
+      if (!clock) continue;
+      paintClock(clock, timerState(button.dataset.source, Number(button.dataset.pool)));
+    }
+  }
+
   function tick() {
+    if (!el.home.hidden) {
+      refreshClocks(el.sourceList);
+      return;
+    }
     if (!session || (el.quiz.hidden && el.summary.hidden && el.pools.hidden)) return;
     if (!el.pools.hidden) {
-      for (const button of el.poolList.querySelectorAll("button")) {
-        const clock = button.querySelector(".clock");
-        if (!clock) continue;
-        paintClock(clock, timerState(session.sourceId, Number(button.dataset.pool)));
-      }
+      refreshClocks(el.poolList);
       return;
     }
     const state = timerState(session.sourceId, session.poolIndex);
@@ -509,6 +522,8 @@
     saveStore(store);
     openPool(pool.index);
   });
+
+  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.0"}`;
 
   tickId = setInterval(tick, 250);
 
