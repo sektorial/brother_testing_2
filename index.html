@@ -16,7 +16,7 @@
       document.head.appendChild(base);
     })();
   </script>
-  <link rel="stylesheet" href="assets/app.css?v=1.0.1" />
+  <link rel="stylesheet" href="assets/app.css?v=1.0.2" />
 </head>
 <body>
   <div id="app">
@@ -24,12 +24,27 @@
       <button type="button" id="btn-home" class="ghost" hidden>← Меню</button>
       <div class="title-wrap">
         <h1 id="title">Тренажер</h1>
-        <p id="app-version" class="version">Версія 1.0.1</p>
+        <p id="app-version" class="version">Версія 1.0.2</p>
       </div>
       <span id="timer" class="timer" hidden>20:00</span>
+      <button type="button" id="btn-logout" class="ghost" hidden>Вийти</button>
     </header>
 
-    <main id="screen-home" class="screen">
+    <main id="screen-login" class="screen" hidden>
+      <h2>Вхід</h2>
+      <form id="login-form" class="stack">
+        <label class="answer-label">Ім'я
+          <input id="login-user" name="username" autocomplete="username" />
+        </label>
+        <label class="answer-label">Пароль
+          <input id="login-pass" name="password" type="password" autocomplete="current-password" />
+        </label>
+        <p id="login-error" class="warn" hidden>Невірне ім'я або пароль.</p>
+        <button type="submit" class="primary">Увійти</button>
+      </form>
+    </main>
+
+    <main id="screen-home" class="screen" hidden>
       <p class="lead">Зараз у банку лише 2025 рік. Інших років ще немає: для них потрібні свої PDF. Оберіть пул нижче. У пулі 30 питань у порядку файлу, між пулами є перерва.</p>
       <div id="source-list"></div>
       <p id="load-error" class="warn" hidden></p>
@@ -80,7 +95,8 @@
       </div>
     </main>
   </div>
-  <script src="assets/version.js?v=1.0.1"></script>
-  <script src="assets/app.js?v=1.0.1"></script>
+  <script src="assets/version.js?v=1.0.2"></script>
+  <script src="assets/auth.js?v=1.0.2"></script>
+  <script src="assets/app.js?v=1.0.2"></script>
 </body>
 </html>

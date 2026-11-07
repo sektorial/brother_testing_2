@@ -10,12 +10,14 @@
     { id: "math", title: "Математичний", minutes: 20 },
   ];
   const LS_KEY = "bt2-progress-v1";
+  const AUTH_KEY = "bt2-auth-v1";
 
   const el = {
     homeBtn: document.getElementById("btn-home"),
     title: document.getElementById("title"),
     timer: document.getElementById("timer"),
     version: document.getElementById("app-version"),
+    login: document.getElementById("screen-login"),
     home: document.getElementById("screen-home"),
     pools: document.getElementById("screen-pools"),
     break: document.getElementById("screen-break"),
@@ -47,6 +49,11 @@
     toBreak: document.getElementById("btn-break"),
     retry: document.getElementById("btn-retry"),
     summaryPools: document.getElementById("btn-summary-pools"),
+    logout: document.getElementById("btn-logout"),
+    loginForm: document.getElementById("login-form"),
+    loginUser: document.getElementById("login-user"),
+    loginPass: document.getElementById("login-pass"),
+    loginError: document.getElementById("login-error"),
   };
 
   /** @type {any[]} */
@@ -98,12 +105,13 @@
   }
 
   function show(name) {
+    el.login.hidden = name !== "login";
     el.home.hidden = name !== "home";
     el.pools.hidden = name !== "pools";
     el.break.hidden = name !== "break";
     el.quiz.hidden = name !== "quiz";
     el.summary.hidden = name !== "summary";
-    el.homeBtn.hidden = name === "home";
+    el.homeBtn.hidden = name === "home" || name === "login";
     const timed = name === "quiz" || name === "summary";
     el.timer.hidden = !timed;
     if (name === "home") el.title.textContent = "Тренажер";
@@ -544,21 +552,80 @@
     openPool(pool.index);
   });
 
-  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.1"}`;
+  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.2"}`;
 
   tickId = setInterval(tick, 250);
 
-  fetch("data/questions.json")
-    .then((response) => {
-      if (!response.ok) throw new Error(String(response.status));
-      return response.json();
-    })
-    .then((data) => {
-      questions = data;
-      renderHome();
-    })
-    .catch(() => {
-      el.loadError.hidden = false;
-      el.loadError.textContent = "Не вдалося завантажити банк питань.";
+  function sameSecret(given, expected) {
+    const left = String(given);
+    const right = String(expected);
+    let diff = left.length ^ right.length;
+    const length = Math.max(left.length, right.length);
+    for (let i = 0; i < length; i += 1) {
+      diff |= (left.charCodeAt(i) || 0) ^ (right.charCodeAt(i) || 0);
+    }
+    return diff === 0;
+  }
+
+  function startApp() {
+    fetch("data/questions.json")
+      .then((response) => {
+        if (!response.ok) throw new Error(String(response.status));
+        return response.json();
+      })
+      .then((data) => {
+        questions = data;
+        renderHome();
+      })
+      .catch(() => {
+        show("home");
+        el.loadError.hidden = false;
+        el.loadError.textContent = "Не вдалося завантажити банк питань.";
+      });
+  }
+
+  function sha256(value) {
+    const bytes = new TextEncoder().encode(String(value));
+    return crypto.subtle.digest("SHA-256", bytes).then((digest) => (
+      [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, "0")).join("")
+    ));
+  }
+
+  function showLogin() {
+    show("login");
+    el.title.textContent = "Тренажер";
+    el.logout.hidden = true;
+    el.loginForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      Promise.all([sha256(el.loginUser.value), sha256(el.loginPass.value)]).then(([userHash, passwordHash]) => {
+        const auth = window.APP_AUTH || {};
+        const ok = sameSecret(userHash, auth.userHash || "") && sameSecret(passwordHash, auth.passwordHash || "");
+        el.loginError.hidden = ok;
+        if (!ok) return;
+        sessionStorage.setItem(AUTH_KEY, "1");
+        el.loginPass.value = "";
+        el.logout.hidden = false;
+        startApp();
+      });
     });
+  }
+
+  el.logout.addEventListener("click", () => {
+    sessionStorage.removeItem(AUTH_KEY);
+    session = null;
+    el.logout.hidden = true;
+    el.loginPass.value = "";
+    el.loginError.hidden = true;
+    show("login");
+  });
+
+  if (!window.APP_AUTH) {
+    el.logout.hidden = true;
+    startApp();
+  } else if (sessionStorage.getItem(AUTH_KEY) === "1") {
+    el.logout.hidden = false;
+    startApp();
+  } else {
+    showLogin();
+  }
 })();
