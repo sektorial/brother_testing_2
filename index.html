@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>Тренажер тестів</title>
+  <link rel="stylesheet" href="assets/app.css?v=2" />
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <button type="button" id="btn-home" class="ghost" hidden>← Меню</button>
+      <h1 id="title">Тренажер</h1>
+      <span id="timer" class="timer" hidden>20:00</span>
+    </header>
+
+    <main id="screen-home" class="screen">
+      <p class="lead">Бібліотека 2025. Оберіть напрямок. Кожен пул має 30 питань у порядку файлу. Між пулами є перерва, таймер іде лише всередині пулу.</p>
+      <section class="block">
+        <h2>Бібліотека</h2>
+        <button type="button" class="choice selected" disabled>2025</button>
+      </section>
+      <section class="block">
+        <h2>Напрямок</h2>
+        <div id="source-list" class="stack"></div>
+      </section>
+      <p id="load-error" class="warn" hidden></p>
+    </main>
+
+    <main id="screen-pools" class="screen" hidden>
+      <p id="pools-lead" class="lead"></p>
+      <div id="pool-list" class="stack"></div>
+    </main>
+
+    <main id="screen-break" class="screen" hidden>
+      <h2>Перерва</h2>
+      <p id="break-text" class="lead"></p>
+      <div class="stack">
+        <button type="button" id="btn-next-pool" class="primary">Почати наступний пул</button>
+        <button type="button" id="btn-break-pools" class="secondary">До списку пулів</button>
+      </div>
+    </main>
+
+    <main id="screen-quiz" class="screen" hidden>
+      <p id="quiz-meta" class="meta"></p>
+      <p id="prompt" class="prompt"></p>
+      <div id="stimulus" class="stimulus"></div>
+      <div id="choices" class="choices"></div>
+      <label id="answer-label" class="answer-label" hidden>
+        <span id="answer-hint"></span>
+        <input id="answer-input" type="text" autocomplete="off" enterkeyhint="done" />
+      </label>
+      <p id="note" class="note" hidden></p>
+      <p id="verdict" class="verdict" hidden></p>
+      <p id="explanation" class="explanation" hidden></p>
+      <div class="row">
+        <button type="button" id="btn-confirm" class="primary" disabled>Підтвердити</button>
+        <button type="button" id="btn-prev" class="secondary">Назад</button>
+        <button type="button" id="btn-next" class="secondary">Далі</button>
+      </div>
+      <button type="button" id="btn-finish" class="ghost finish">Завершити пул</button>
+    </main>
+
+    <main id="screen-summary" class="screen" hidden>
+      <h2>Результат</h2>
+      <p id="summary-text" class="lead"></p>
+      <div class="stack">
+        <button type="button" id="btn-review" class="secondary">Переглянути питання</button>
+        <button type="button" id="btn-break" class="primary" hidden>Перерва перед наступним пулом</button>
+        <button type="button" id="btn-retry" class="secondary">Пройти цей пул знову</button>
+        <button type="button" id="btn-summary-pools" class="ghost">До списку пулів</button>
+      </div>
+    </main>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>

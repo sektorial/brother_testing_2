@@ -1,0 +1,35 @@
+{
+  "sources": {
+    "abstract": {
+      "count": 156,
+      "unique_numbers": 156,
+      "missing_numbers": [],
+      "low_confidence": 0
+    },
+    "math": {
+      "count": 156,
+      "unique_numbers": 156,
+      "missing_numbers": [],
+      "low_confidence": 0
+    },
+    "verbal-gold": {
+      "count": 156,
+      "unique_numbers": 156,
+      "missing_numbers": [],
+      "low_confidence": 1
+    },
+    "verbal-standart": {
+      "count": 155,
+      "unique_numbers": 155,
+      "missing_numbers": [
+        33
+      ],
+      "low_confidence": 0
+    }
+  },
+  "ok": true,
+  "abstract_figure_problems": [],
+  "math_grids_missing_image": [],
+  "verbal_pair_problems": [],
+  "duplicates": 0
+}

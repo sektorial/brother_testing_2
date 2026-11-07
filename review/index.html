@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Перевірка банку питань</title>
+  <style>
+    :root { color-scheme: light; --ink: #1c2430; --muted: #5c6b7a; --line: #d5dde6; --ok: #e5f6ea; --bad: #fde8e8; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.45 "Segoe UI", sans-serif; color: var(--ink); background: #f4f7fb; }
+    header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); padding: 12px 16px; z-index: 2; }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    label { font-size: 14px; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+    select, input { font: inherit; padding: 4px 8px; }
+    #stats { margin-left: auto; color: var(--muted); font-size: 14px; }
+    main { padding: 16px; display: grid; gap: 12px; }
+    article { background: #fff; border: 1px solid var(--line); border-radius: 10px; padding: 14px; }
+    .meta { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+    .pill { background: #eef3f8; border-radius: 999px; padding: 2px 8px; font-size: 13px; }
+    .pill.low { background: #fff3cd; }
+    .pill.bad { background: var(--bad); }
+    .prompt { font-size: 18px; margin: 0 0 10px; }
+    .figures, .pages { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+    .figures img, .options img { width: 92px; height: 92px; object-fit: contain; background: #fff; border: 1px solid var(--line); }
+    .stimulus { width: 220px; height: auto; max-height: 140px; object-fit: contain; }
+    .options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .option { border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: #fff; }
+    .option.correct { background: var(--ok); border-color: #8dcea0; }
+    .explanation { color: var(--muted); margin: 10px 0 0; }
+    .pages img { width: 160px; height: auto; border: 1px solid var(--line); background: #fff; }
+    .empty { padding: 24px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Перевірка банку питань</h1>
+    <div class="filters">
+      <label>Блок <select id="block"><option value="">усі</option><option value="verbal">вербальний</option><option value="abstract">абстрактний</option><option value="math">математичний</option></select></label>
+      <label>Джерело <select id="source"><option value="">усі</option></select></label>
+      <label><input id="low" type="checkbox" /> низька впевненість</label>
+      <label><input id="issues" type="checkbox" /> є примітки</label>
+      <label><input id="dups" type="checkbox" /> можливий дублікат</label>
+      <span id="stats"></span>
+    </div>
+  </header>
+  <main id="list"></main>
+  <script>
+    const list = document.querySelector("#list");
+    const stats = document.querySelector("#stats");
+    const sourceSelect = document.querySelector("#source");
+    let questions = [];
+    let visible = 24;
+
+    function asset(path) {
+      return path ? "../" + path : "";
+    }
+
+    function card(question) {
+      const article = document.createElement("article");
+      const meta = document.createElement("div");
+      meta.className = "meta";
+      const bits = [
+        question.id,
+        question.block,
+        question.subtype,
+        question.interaction,
+        question.confidence
+      ];
+      for (const bit of bits) {
+        const pill = document.createElement("span");
+        pill.className = "pill" + (bit === "low" ? " low" : "");
+        pill.textContent = bit;
+        meta.append(pill);
+      }
+      for (const issue of question.issues || []) {
+        const pill = document.createElement("span");
+        pill.className = "pill bad";
+        pill.textContent = issue;
+        meta.append(pill);
+      }
+      if (question.duplicate_of) {
+        const pill = document.createElement("span");
+        pill.className = "pill bad";
+        pill.textContent = "дубль " + question.duplicate_of;
+        meta.append(pill);
+      }
+      const prompt = document.createElement("p");
+      prompt.className = "prompt";
+      prompt.textContent = question.number + ". " + (question.prompt || "(немає умови)");
+      article.append(meta, prompt);
+
+      if ((question.stimulus_images || []).length) {
+        const row = document.createElement("div");
+        row.className = "figures";
+        for (const path of question.stimulus_images) {
+          const img = document.createElement("img");
+          img.className = "stimulus";
+          img.src = asset(path);
+          img.alt = "схема";
+          row.append(img);
+        }
+        article.append(row);
+      }
+
+      const options = document.createElement("div");
+      options.className = "options";
+      const correct = new Set(question.correct || []);
+      for (const option of question.options || []) {
+        const node = document.createElement("div");
+        node.className = "option" + (correct.has(option.id) || correct.has(option.text) ? " correct" : "");
+        if (option.image) {
+          const img = document.createElement("img");
+          img.src = asset(option.image);
+          img.alt = "фігура " + option.id;
+          node.append(img);
+        }
+        const label = document.createElement("div");
+        label.textContent = option.text || ("фігура " + option.id);
+        node.append(label);
+        options.append(node);
+      }
+      article.append(options);
+
+      if (question.explanation) {
+        const explanation = document.createElement("p");
+        explanation.className = "explanation";
+        explanation.textContent = question.explanation;
+        article.append(explanation);
+      }
+
+      const pages = document.createElement("div");
+      pages.className = "pages";
+      for (const path of (question.page_images || []).slice(0, 2)) {
+        const img = document.createElement("img");
+        img.src = asset(path);
+        img.alt = "сторінка джерела";
+        img.loading = "lazy";
+        pages.append(img);
+      }
+      article.append(pages);
+      return article;
+    }
+
+    function render() {
+      const block = document.querySelector("#block").value;
+      const source = sourceSelect.value;
+      const low = document.querySelector("#low").checked;
+      const issues = document.querySelector("#issues").checked;
+      const dups = document.querySelector("#dups").checked;
+      const shown = questions.filter((question) => {
+        if (block && question.block !== block) return false;
+        if (source && question.source !== source) return false;
+        if (low && question.confidence === "high") return false;
+        if (issues && !(question.issues || []).length) return false;
+        if (dups && !question.duplicate_of) return false;
+        return true;
+      });
+      list.replaceChildren();
+      stats.textContent = Math.min(visible, shown.length) + " з " + shown.length + " (усього " + questions.length + ")";
+      if (!shown.length) {
+        const empty = document.createElement("p");
+        empty.className = "empty";
+        empty.textContent = "Немає карток за цими фільтрами.";
+        list.append(empty);
+        return;
+      }
+      for (const question of shown.slice(0, visible)) list.append(card(question));
+      if (shown.length > visible) {
+        const more = document.createElement("button");
+        more.type = "button";
+        more.textContent = "Показати ще";
+        more.addEventListener("click", () => {
+          visible += 24;
+          render();
+        });
+        list.append(more);
+      }
+    }
+
+    function resetVisible() {
+      visible = 24;
+      render();
+    }
+
+    for (const node of document.querySelectorAll("select, input")) node.addEventListener("change", resetVisible);
+
+    fetch("../data/questions.json")
+      .then((response) => response.json())
+      .then((data) => {
+        questions = data;
+        const sources = [...new Set(data.map((question) => question.source))].sort();
+        for (const source of sources) {
+          const option = document.createElement("option");
+          option.value = source;
+          option.textContent = source;
+          sourceSelect.append(option);
+        }
+        render();
+      })
+      .catch((error) => {
+        list.textContent = "Не вдалося відкрити банк: " + error;
+      });
+  </script>
+</body>
+</html>

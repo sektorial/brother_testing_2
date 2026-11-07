@@ -1,0 +1,21 @@
+materials/
+__pycache__/
+*.pyc
+
+# Scratch crops and full-page scans. The site uses question figures only.
+data/_*/
+data/_*
+data/raw/**/manifest.json
+data/standart_*.json
+data/gold_option_fixes.json
+data/_batch_*.json
+data/_have_*.json
+data/raw/_samples/
+data/raw/**/page-*.jpg
+data/raw/**/text/
+data/raw/**/bands/
+data/raw/**/sheets/
+data/raw/**/_crops/
+data/raw/abstract/images/
+data/raw/verbal-gold/
+data/raw/verbal-standart/
