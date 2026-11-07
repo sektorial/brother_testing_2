@@ -162,11 +162,26 @@
   function isTyped(question) {
     return question.interaction === "numeric" || question.interaction === "expression";
   }
+  function splitEq(value) {
+    const index = value.indexOf("=");
+    if (index === -1) return [value, ""];
+    return [value.slice(0, index), value.slice(index + 1)];
+  }
+  function exprEqual(given, expected) {
+    const left = normExpr(given);
+    const right = normExpr(expected);
+    if (left === right) return true;
+    const [givenLeft, givenRight] = splitEq(left);
+    const [expectedLeft, expectedRight] = splitEq(right);
+    if (!givenLeft || givenLeft !== expectedLeft) return false;
+    if (!givenRight || !expectedRight) return true;
+    return numsEqual(givenRight, expectedRight);
+  }
   function grade(question, picked) {
     const correct = (question.correct || []).map(String);
     if (isTyped(question)) {
       return correct.some((item) =>
-        question.interaction === "expression" ? normExpr(picked[0] || "") === normExpr(item) : numsEqual(picked[0] || "", item)
+        question.interaction === "expression" ? exprEqual(picked[0] || "", item) : numsEqual(picked[0] || "", item)
       );
     }
     const chosen = new Set(picked.map(String));
@@ -283,7 +298,13 @@
   function renderQuestion() {
     const pool = currentPool();
     const question = pool.items[session.index];
-    const saved = savedAnswer(question.id);
+    let saved = savedAnswer(question.id);
+    if (saved && !saved.ok && question.interaction === "expression" && grade(question, saved.picked)) {
+      const store = loadStore();
+      store.answers[question.id].ok = true;
+      saveStore(store);
+      saved = store.answers[question.id];
+    }
     const closed = timerState(session.sourceId, session.poolIndex).closed;
     const locked = Boolean(saved) || closed;
     const source = sourceById(session.sourceId);
@@ -337,7 +358,7 @@
       }
     } else {
       el.answerHint.textContent = question.interaction === "expression"
-        ? "Впишіть вираз із діями і результатом. Пробіли не враховуються."
+        ? "Впишіть дії між числами. Результат після знака рівності можна не повторювати."
         : "Впишіть число. Кома і крапка рівнозначні.";
       el.answerInput.value = locked ? (saved.picked[0] || "") : "";
       el.answerInput.disabled = locked;
@@ -523,7 +544,7 @@
     openPool(pool.index);
   });
 
-  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.0"}`;
+  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.1"}`;
 
   tickId = setInterval(tick, 250);
 
