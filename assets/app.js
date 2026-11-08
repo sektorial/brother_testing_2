@@ -1,13 +1,29 @@
 (() => {
   "use strict";
 
-  const LIBRARY = "2025";
   const POOL_SIZE = 30;
-  const SOURCES = [
-    { id: "verbal-gold", title: "Вербальний GOLD", minutes: 8 },
-    { id: "verbal-standart", title: "Вербальний STANDART", minutes: 8 },
-    { id: "abstract", title: "Абстрактно-логічний", minutes: 20 },
-    { id: "math", title: "Математичний", minutes: 20 },
+  const LIBRARIES = [
+    { id: "2025", title: "САП 2025" },
+    { id: "femida-2022", title: "FEMIDA 2022" },
+    { id: "psymetrics-2021", title: "Psymetrics 2021" },
+    { id: "psymetrics-2022", title: "Psymetrics test 2022" },
+    { id: "startexam-2022", title: "StartExam 2022" },
+  ];
+  const CATEGORIES = [
+    { id: "verbal", title: "Вербальний блок", minutes: 8 },
+    { id: "abstract", title: "Абстрактно-логічний блок", minutes: 20 },
+    { id: "math", title: "Математичний блок", minutes: 20 },
+  ];
+  const LEGACY_SOURCES = {
+    "verbal-gold": { title: "Вербальний GOLD", block: "verbal", order: 0 },
+    "verbal-standart": { title: "Вербальний STANDART", block: "verbal", order: 1 },
+    abstract: { title: "Абстрактно-логічний", block: "abstract", order: 0 },
+    math: { title: "Математичний", block: "math", order: 0 },
+  };
+  const MARKS = [
+    { id: "flag", label: "Прапорець" },
+    { id: "heart", label: "Серце" },
+    { id: "star", label: "Зірка" },
   ];
   const LS_KEY = "bt2-progress-v1";
   const AUTH_KEY = "bt2-auth-v1";
@@ -46,6 +62,8 @@
     finish: document.getElementById("btn-finish"),
     summaryText: document.getElementById("summary-text"),
     review: document.getElementById("btn-review"),
+    wrong: document.getElementById("btn-wrong"),
+    markRetries: document.getElementById("mark-retries"),
     toBreak: document.getElementById("btn-break"),
     retry: document.getElementById("btn-retry"),
     summaryPools: document.getElementById("btn-summary-pools"),
@@ -54,39 +72,61 @@
     loginUser: document.getElementById("login-user"),
     loginPass: document.getElementById("login-pass"),
     loginError: document.getElementById("login-error"),
+    markButtons: [...document.querySelectorAll(".mark")],
   };
 
   /** @type {any[]} */
   let questions = [];
-  /** @type {{ sourceId: string, poolIndex: number, index: number } | null} */
+  /** @type {{ libraryId: string, sourceId: string | null, poolIndex: number, index: number, reviewing: boolean, drill: { kind: string, mark: string | null, items: any[] } | null } | null} */
   let session = null;
   let tickId = 0;
 
   function loadStore() {
     try {
       const raw = JSON.parse(localStorage.getItem(LS_KEY) || "{}");
-      return { answers: raw.answers || {}, timers: raw.timers || {} };
+      return { answers: raw.answers || {}, timers: raw.timers || {}, marks: raw.marks || {} };
     } catch {
-      return { answers: {}, timers: {} };
+      return { answers: {}, timers: {}, marks: {} };
     }
   }
   function saveStore(store) {
     localStorage.setItem(LS_KEY, JSON.stringify(store));
   }
 
-  function sourceById(id) {
-    return SOURCES.find((source) => source.id === id);
+  function libraryById(id) {
+    return LIBRARIES.find((library) => library.id === id);
   }
-  function sourceQuestions(sourceId) {
+  function categoryById(id) {
+    return CATEGORIES.find((category) => category.id === id);
+  }
+  function sourcesFor(libraryId) {
+    const map = new Map();
+    questions.forEach((question, index) => {
+      if (question.library !== libraryId || map.has(question.source)) return;
+      const legacy = LEGACY_SOURCES[question.source];
+      map.set(question.source, {
+        id: question.source,
+        title: question.source_title || legacy?.title || question.source,
+        block: question.block || legacy?.block || "verbal",
+        order: question.source_order ?? legacy?.order ?? index,
+      });
+    });
+    return [...map.values()].sort((a, b) => a.order - b.order || a.title.localeCompare(b.title, "uk"));
+  }
+  function sourceById(libraryId, sourceId) {
+    return sourcesFor(libraryId).find((source) => source.id === sourceId) || null;
+  }
+  function sourceQuestions(libraryId, sourceId) {
     return questions
-      .filter((item) => item.library === LIBRARY && item.source === sourceId)
+      .filter((item) => item.library === libraryId && item.source === sourceId)
       .sort((a, b) => a.number - b.number);
   }
-  function buildPools(sourceId) {
-    const list = sourceQuestions(sourceId);
+  function buildPools(libraryId, sourceId) {
+    const list = sourceQuestions(libraryId, sourceId);
     const pools = [];
     for (let start = 0; start < list.length; start += POOL_SIZE) {
       const items = list.slice(start, start + POOL_SIZE);
+      if (!items.length) continue;
       pools.push({
         index: pools.length,
         items,
@@ -96,25 +136,39 @@
     }
     return pools;
   }
-  function poolKey(sourceId, poolIndex) {
-    return `${sourceId}:${poolIndex}`;
+  function timerStorageKey(libraryId, sourceId, poolIndex) {
+    const next = `${libraryId}:${sourceId}:${poolIndex}`;
+    if (libraryId === "2025") {
+      const legacy = `${sourceId}:${poolIndex}`;
+      const timers = loadStore().timers;
+      if (timers[legacy] && !timers[next]) return legacy;
+    }
+    return next;
   }
   function currentPool() {
-    if (!session) return null;
-    return buildPools(session.sourceId)[session.poolIndex] || null;
+    if (!session?.sourceId) return null;
+    return buildPools(session.libraryId, session.sourceId)[session.poolIndex] || null;
+  }
+  function activeItems() {
+    if (session?.drill) return session.drill.items;
+    return currentPool()?.items || [];
+  }
+  function limitMs(source) {
+    return (categoryById(source.block)?.minutes || 20) * 60 * 1000;
   }
 
   function show(name) {
     el.login.hidden = name !== "login";
-    el.home.hidden = name !== "home";
+    el.home.hidden = name !== "libraries";
     el.pools.hidden = name !== "pools";
     el.break.hidden = name !== "break";
     el.quiz.hidden = name !== "quiz";
     el.summary.hidden = name !== "summary";
-    el.homeBtn.hidden = name === "home" || name === "login";
-    const timed = name === "quiz" || name === "summary";
+    el.homeBtn.hidden = name === "libraries" || name === "login";
+    el.homeBtn.textContent = name === "pools" ? "← Бібліотеки" : "← Меню";
+    const timed = (name === "quiz" || name === "summary") && !(session && session.drill);
     el.timer.hidden = !timed;
-    if (name === "home") el.title.textContent = "Тренажер";
+    if (name === "libraries") el.title.textContent = "Тренажер";
   }
 
   function formatClock(ms) {
@@ -123,29 +177,36 @@
     const seconds = total % 60;
     return `${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
   }
-  function limitMs(sourceId) {
-    return sourceById(sourceId).minutes * 60 * 1000;
-  }
-  function timerState(sourceId, poolIndex) {
-    const timer = loadStore().timers[poolKey(sourceId, poolIndex)];
-    if (!timer) return { started: false, left: limitMs(sourceId), closed: false };
+  function timerState(libraryId, sourceId, poolIndex) {
+    const source = sourceById(libraryId, sourceId);
+    const limit = source ? limitMs(source) : 0;
+    const timer = loadStore().timers[timerStorageKey(libraryId, sourceId, poolIndex)];
+    if (!timer) return { started: false, left: limit, closed: false };
     if (timer.closed) return { started: true, left: timer.left, closed: true };
     return { started: true, left: timer.deadline - Date.now(), closed: false };
   }
-  function ensureTimer(sourceId, poolIndex) {
+  function ensureTimer(libraryId, sourceId, poolIndex) {
     const store = loadStore();
-    const key = poolKey(sourceId, poolIndex);
+    const key = timerStorageKey(libraryId, sourceId, poolIndex);
     if (!store.timers[key]) {
-      store.timers[key] = { deadline: Date.now() + limitMs(sourceId) };
+      const source = sourceById(libraryId, sourceId);
+      store.timers[key] = { deadline: Date.now() + limitMs(source) };
       saveStore(store);
     }
   }
-  function closeTimer(sourceId, poolIndex) {
+  function closeTimer(libraryId, sourceId, poolIndex) {
     const store = loadStore();
-    const key = poolKey(sourceId, poolIndex);
+    const key = timerStorageKey(libraryId, sourceId, poolIndex);
     const timer = store.timers[key];
     if (!timer || timer.closed) return;
     store.timers[key] = { closed: true, left: Math.max(0, timer.deadline - Date.now()) };
+    saveStore(store);
+  }
+  function clearTimer(libraryId, sourceId, poolIndex) {
+    const store = loadStore();
+    delete store.timers[timerStorageKey(libraryId, sourceId, poolIndex)];
+    delete store.timers[`${libraryId}:${sourceId}:${poolIndex}`];
+    delete store.timers[`${sourceId}:${poolIndex}`];
     saveStore(store);
   }
 
@@ -185,6 +246,17 @@
     if (!givenRight || !expectedRight) return true;
     return numsEqual(givenRight, expectedRight);
   }
+  function keyText(question) {
+    return (question.correct || []).map((id) => {
+      const option = (question.options || []).find((item) => String(item.id) === String(id));
+      if (option?.text) return option.text;
+      if (option?.image) return `Фігура ${id}`;
+      return String(id);
+    }).join(", ");
+  }
+  function hasKey(question) {
+    return (question.correct || []).length > 0 && !(question.issues || []).includes("key-missing");
+  }
   function grade(question, picked) {
     const correct = (question.correct || []).map(String);
     if (isTyped(question)) {
@@ -199,24 +271,43 @@
   function savedAnswer(id) {
     return loadStore().answers[id] || null;
   }
+  function savedMark(id) {
+    return loadStore().marks[id] || null;
+  }
   function poolStats(pool) {
     let correct = 0;
     let answered = 0;
+    let total = 0;
+    let unscored = 0;
     for (const question of pool.items) {
+      if (!hasKey(question)) {
+        unscored += 1;
+        continue;
+      }
+      total += 1;
       const saved = savedAnswer(question.id);
-      if (!saved) continue;
+      if (!saved || saved.unscored) continue;
       answered += 1;
       if (saved.ok) correct += 1;
     }
-    return { correct, answered, total: pool.items.length };
+    return { correct, answered, total, unscored };
   }
 
-  function makePoolButton(sourceId, pool) {
+  function paintClock(node, state) {
+    if (!state.started) {
+      node.textContent = "";
+      return;
+    }
+    if (state.left <= 0) node.textContent = " · час вийшов";
+    else node.textContent = ` · ${formatClock(state.left)}`;
+  }
+  function makePoolButton(libraryId, sourceId, pool) {
     const stats = poolStats(pool);
-    const state = timerState(sourceId, pool.index);
+    const state = timerState(libraryId, sourceId, pool.index);
     const button = document.createElement("button");
     button.type = "button";
     button.className = "choice" + (stats.answered ? " selected" : "");
+    button.dataset.library = libraryId;
     button.dataset.source = sourceId;
     button.dataset.pool = String(pool.index);
     const label = document.createElement("span");
@@ -232,67 +323,93 @@
     paintClock(clock, state);
     button.append(label, sub);
     button.addEventListener("click", () => {
-      session = { sourceId, poolIndex: pool.index, index: 0 };
+      session.sourceId = sourceId;
+      session.poolIndex = pool.index;
+      session.drill = null;
+      session.reviewing = false;
       openPool(pool.index);
     });
     return button;
   }
 
-  function renderHome() {
+  function renderLibraries() {
     session = null;
-    show("home");
+    show("libraries");
     el.sourceList.replaceChildren();
-    for (const source of SOURCES) {
-      const section = document.createElement("section");
-      section.className = "block";
-      const heading = document.createElement("h2");
-      const count = sourceQuestions(source.id).length;
-      heading.textContent = `${source.title} · ${count} · ${source.minutes} хв`;
-      const stack = document.createElement("div");
-      stack.className = "stack";
-      for (const pool of buildPools(source.id)) stack.append(makePoolButton(source.id, pool));
-      section.append(heading, stack);
-      el.sourceList.append(section);
+    for (const library of LIBRARIES) {
+      const count = questions.filter((item) => item.library === library.id).length;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "choice";
+      const label = document.createElement("span");
+      label.textContent = library.title;
+      const sub = document.createElement("span");
+      sub.className = "sub";
+      sub.textContent = count ? `${count} питань` : "немає питань";
+      button.append(label, sub);
+      button.addEventListener("click", () => openLibrary(library.id));
+      el.sourceList.append(button);
     }
   }
 
-  function openPools(sourceId) {
-    session = { sourceId, poolIndex: 0, index: 0 };
+  function openLibrary(libraryId) {
+    session = {
+      libraryId,
+      sourceId: null,
+      poolIndex: 0,
+      index: 0,
+      reviewing: false,
+      drill: null,
+    };
     show("pools");
-    const source = sourceById(sourceId);
-    el.title.textContent = source.title;
-    const pools = buildPools(sourceId);
-    el.poolsLead.textContent = `${pools.length} пулів по порядку файлу. Таймер ${source.minutes} хв на пул починається з першого відкриття і не зупиняється в меню.`;
+    const library = libraryById(libraryId);
+    el.title.textContent = library.title;
+    const sources = sourcesFor(libraryId);
+    el.poolsLead.textContent = sources.length
+      ? "Пули по 30 питань у порядку файлу. Таймер блоку стартує з першого відкриття пулу і не зупиняється в меню."
+      : "У цій бібліотеці ще немає питань.";
     paintPools();
   }
 
   function paintPools() {
     if (!session) return;
-    const pools = buildPools(session.sourceId);
+    const sources = sourcesFor(session.libraryId);
     el.poolList.replaceChildren();
-    for (const pool of pools) el.poolList.append(makePoolButton(session.sourceId, pool));
-  }
-
-  function paintClock(node, state) {
-    if (!state.started) {
-      node.textContent = "";
-      return;
+    for (const category of CATEGORIES) {
+      const grouped = sources.filter((source) => source.block === category.id);
+      if (!grouped.length) continue;
+      const section = document.createElement("section");
+      section.className = "block";
+      const heading = document.createElement("h2");
+      heading.textContent = `${category.title} · ${category.minutes} хв`;
+      section.append(heading);
+      for (const source of grouped) {
+        const title = document.createElement("h3");
+        const count = sourceQuestions(session.libraryId, source.id).length;
+        title.textContent = `${source.title} · ${count}`;
+        const stack = document.createElement("div");
+        stack.className = "stack";
+        for (const pool of buildPools(session.libraryId, source.id)) {
+          stack.append(makePoolButton(session.libraryId, source.id, pool));
+        }
+        section.append(title, stack);
+      }
+      el.poolList.append(section);
     }
-    if (state.left <= 0) node.textContent = " · час вийшов";
-    else node.textContent = ` · ${formatClock(state.left)}`;
   }
 
   function openPool(poolIndex) {
     session.poolIndex = poolIndex;
     session.reviewing = false;
+    session.drill = null;
     session.index = 0;
-    ensureTimer(session.sourceId, poolIndex);
-    if (timerState(session.sourceId, poolIndex).left <= 0) {
-      closeTimer(session.sourceId, poolIndex);
+    ensureTimer(session.libraryId, session.sourceId, poolIndex);
+    if (timerState(session.libraryId, session.sourceId, poolIndex).left <= 0) {
+      closeTimer(session.libraryId, session.sourceId, poolIndex);
       showSummary(true);
       return;
     }
-    if (timerState(session.sourceId, poolIndex).closed) {
+    if (timerState(session.libraryId, session.sourceId, poolIndex).closed) {
       showSummary(false);
       return;
     }
@@ -303,21 +420,52 @@
     renderQuestion();
   }
 
+  function wrongItems(pool) {
+    return pool.items.filter((question) => {
+      const saved = savedAnswer(question.id);
+      return Boolean(saved) && saved.ok === false;
+    });
+  }
+  function markedItems(pool, mark) {
+    return pool.items.filter((question) => savedMark(question.id) === mark);
+  }
+  function openDrill(kind, mark) {
+    const pool = currentPool();
+    const items = kind === "wrong" ? wrongItems(pool) : markedItems(pool, mark);
+    if (!items.length) return;
+    const store = loadStore();
+    for (const question of items) delete store.answers[question.id];
+    saveStore(store);
+    session.drill = { kind, mark: mark || null, items };
+    session.reviewing = false;
+    session.index = 0;
+    show("quiz");
+    renderQuestion();
+  }
+
   function renderQuestion() {
     const pool = currentPool();
-    const question = pool.items[session.index];
+    const items = activeItems();
+    const question = items[session.index];
     let saved = savedAnswer(question.id);
-    if (saved && !saved.ok && question.interaction === "expression" && grade(question, saved.picked)) {
+    if (saved && !saved.ok && !saved.unscored && question.interaction === "expression" && grade(question, saved.picked)) {
       const store = loadStore();
       store.answers[question.id].ok = true;
       saveStore(store);
       saved = store.answers[question.id];
     }
-    const closed = timerState(session.sourceId, session.poolIndex).closed;
+    const closed = !session.drill && timerState(session.libraryId, session.sourceId, session.poolIndex).closed;
     const locked = Boolean(saved) || closed;
-    const source = sourceById(session.sourceId);
-    el.title.textContent = `${source.title} · пул ${session.poolIndex + 1}`;
-    el.quizMeta.textContent = `Питання ${session.index + 1} з ${pool.items.length} · № ${question.number}`;
+    const source = sourceById(session.libraryId, session.sourceId);
+    let prefix = "";
+    if (session.drill?.kind === "wrong") prefix = "Помилки · ";
+    else if (session.drill?.kind === "mark") {
+      const mark = MARKS.find((item) => item.id === session.drill.mark);
+      prefix = `${mark ? mark.label : "Позначка"} · `;
+    }
+    el.title.textContent = `${prefix}${source.title} · пул ${pool.index + 1}`;
+    el.quizMeta.textContent = `Питання ${session.index + 1} з ${items.length} · № ${question.number}`;
+    paintMarks(question.id);
     el.prompt.textContent = question.prompt || "";
 
     el.stimulus.replaceChildren();
@@ -334,7 +482,8 @@
     el.choices.replaceChildren();
     el.choices.classList.toggle("figures", !typed && (question.options || []).some((option) => option.image));
 
-    const picked = new Set(locked ? saved.picked.map(String) : []);
+    const picked = new Set(locked && saved ? saved.picked.map(String) : []);
+    const keyed = hasKey(question);
     if (!typed) {
       for (const option of question.options || []) {
         const button = document.createElement("button");
@@ -347,7 +496,7 @@
           image.alt = `Фігура ${option.id}`;
           const caption = document.createElement("span");
           caption.className = "caption";
-          caption.textContent = `Фігура ${option.id}`;
+          caption.textContent = option.text || `Фігура ${option.id}`;
           button.append(image, caption);
         } else {
           button.textContent = option.text || option.id;
@@ -355,8 +504,10 @@
         if (locked) {
           const correct = new Set((question.correct || []).map(String));
           const chosen = picked.has(String(option.id));
-          button.classList.toggle("good", correct.has(String(option.id)));
-          button.classList.toggle("bad", chosen && !correct.has(String(option.id)));
+          if (keyed && saved) {
+            button.classList.toggle("good", correct.has(String(option.id)));
+            button.classList.toggle("bad", chosen && !correct.has(String(option.id)));
+          } else if (chosen) button.classList.add("selected");
           button.disabled = true;
         } else if (picked.has(String(option.id))) {
           button.classList.add("selected");
@@ -368,26 +519,25 @@
       el.answerHint.textContent = question.interaction === "expression"
         ? "Впишіть дії між числами. Результат після знака рівності можна не повторювати."
         : "Впишіть число. Кома і крапка рівнозначні.";
-      el.answerInput.value = locked ? (saved.picked[0] || "") : "";
+      el.answerInput.value = locked && saved ? (saved.picked[0] || "") : "";
       el.answerInput.disabled = locked;
     }
 
     const issues = question.issues || [];
     const notes = [];
+    if (issues.includes("key-missing")) notes.push("Ключ у цьому експорті не збережено.");
     if (question.confidence === "low" || issues.includes("buttons-illegible")) {
       notes.push("Ключ неповний: частину кнопок на скані не вдалося прочитати.");
     }
-    if (issues.includes("explanation-cropped")) {
-      notes.push("Пояснення на скані обрізане.");
-    }
+    if (issues.includes("explanation-cropped")) notes.push("Пояснення на скані обрізане.");
     el.note.hidden = notes.length === 0;
     el.note.textContent = notes.join(" ");
 
     paintVerdict(question, saved);
-    if (closed && !saved) {
+    if (closed && !saved && keyed) {
       el.verdict.hidden = false;
       el.verdict.className = "verdict bad";
-      el.verdict.textContent = `Без відповіді. Відповідь: ${(question.correct || []).join(", ")}`;
+      el.verdict.textContent = `Без відповіді. Відповідь: ${keyText(question)}`;
       const text = (question.explanation || "").trim();
       el.explanation.hidden = !text;
       el.explanation.textContent = text;
@@ -395,16 +545,35 @@
     el.confirm.hidden = locked;
     el.confirm.disabled = true;
     el.prev.disabled = session.index === 0;
-    el.next.textContent = session.index === pool.items.length - 1 ? "До результату" : "Далі";
+    el.next.textContent = session.index === items.length - 1 ? "До результату" : "Далі";
+    el.finish.textContent = session.drill ? "До результату" : "Завершити пул";
     if (!locked && typed) syncTypedConfirm();
     if (!locked && !typed) syncChoiceConfirm(question);
+  }
+
+  function paintMarks(questionId) {
+    const current = savedMark(questionId);
+    for (const button of el.markButtons) {
+      button.setAttribute("aria-pressed", button.dataset.mark === current ? "true" : "false");
+    }
+  }
+  function setMark(questionId, markId) {
+    const store = loadStore();
+    if (store.marks[questionId] === markId) delete store.marks[questionId];
+    else store.marks[questionId] = markId;
+    saveStore(store);
+    paintMarks(questionId);
   }
 
   function selectionFromDom() {
     return [...el.choices.querySelectorAll(".option.selected")].map((node) => node.dataset.id);
   }
   function neededCount(question) {
-    return question.interaction === "pair" ? 2 : 1;
+    if (isTyped(question)) return 1;
+    const keys = (question.correct || []).length;
+    if (question.interaction === "pair") return 2;
+    if (keys > 1) return keys;
+    return 1;
   }
   function syncChoiceConfirm(question) {
     el.confirm.disabled = selectionFromDom().length !== neededCount(question);
@@ -433,9 +602,16 @@
       el.explanation.hidden = true;
       return;
     }
+    if (saved.unscored || !hasKey(question)) {
+      el.verdict.hidden = false;
+      el.verdict.className = "verdict";
+      el.verdict.textContent = "Відповідь збережено. Ключ для цього питання відсутній, тож воно не входить у рахунок.";
+      el.explanation.hidden = true;
+      return;
+    }
     el.verdict.hidden = false;
     el.verdict.className = "verdict " + (saved.ok ? "good" : "bad");
-    const key = (question.correct || []).join(", ");
+    const key = keyText(question);
     el.verdict.textContent = saved.ok ? "Правильно" : `Неправильно. Відповідь: ${key}`;
     const text = (question.explanation || "").trim();
     el.explanation.hidden = !text;
@@ -443,74 +619,100 @@
   }
 
   function commitAnswer() {
-    const pool = currentPool();
-    const question = pool.items[session.index];
-    if (savedAnswer(question.id) || timerState(session.sourceId, session.poolIndex).closed) return;
+    const items = activeItems();
+    const question = items[session.index];
+    if (savedAnswer(question.id) || (!session.drill && timerState(session.libraryId, session.sourceId, session.poolIndex).closed)) return;
     const picked = isTyped(question) ? [el.answerInput.value.trim()] : selectionFromDom();
     if (!picked.length || (isTyped(question) && !picked[0])) return;
     if (!isTyped(question) && picked.length !== neededCount(question)) return;
     const store = loadStore();
-    store.answers[question.id] = { ok: grade(question, picked), picked };
+    store.answers[question.id] = hasKey(question)
+      ? { ok: grade(question, picked), picked }
+      : { ok: null, picked, unscored: true };
     saveStore(store);
     renderQuestion();
   }
 
   function showSummary(expired) {
+    session.drill = null;
+    session.reviewing = false;
     const pool = currentPool();
     const stats = poolStats(pool);
-    const source = sourceById(session.sourceId);
-    const left = Math.max(0, timerState(session.sourceId, pool.index).left);
-    const used = limitMs(session.sourceId) - left;
+    const source = sourceById(session.libraryId, session.sourceId);
+    const left = Math.max(0, timerState(session.libraryId, session.sourceId, pool.index).left);
+    const used = limitMs(source) - left;
     show("summary");
     el.title.textContent = `${source.title} · пул ${pool.index + 1}`;
     el.timer.textContent = formatClock(left);
     el.timer.classList.toggle("low", left <= 0);
     const timeNote = expired ? "Час вичерпано. " : `Витрачено ${formatClock(used)}. `;
-    el.summaryText.textContent = `${timeNote}Правильно ${stats.correct} з ${stats.total}. Без відповіді ${stats.total - stats.answered}.`;
-    const hasNext = pool.index + 1 < buildPools(session.sourceId).length;
+    const missing = stats.unscored ? ` Без ключа ${stats.unscored}.` : "";
+    el.summaryText.textContent = `${timeNote}Правильно ${stats.correct} з ${stats.total}. Без відповіді ${stats.total - stats.answered}.${missing}`;
+    const hasNext = pool.index + 1 < buildPools(session.libraryId, session.sourceId).length;
     el.toBreak.hidden = !hasNext;
+    const wrong = wrongItems(pool);
+    el.wrong.hidden = wrong.length === 0;
+    el.wrong.textContent = `Пройти питання з неправильною відповіддю (${wrong.length})`;
+    el.markRetries.replaceChildren();
+    for (const mark of MARKS) {
+      const count = markedItems(pool, mark.id).length;
+      if (!count) continue;
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "secondary";
+      button.textContent = `Повторити позначені: ${mark.label} (${count})`;
+      button.addEventListener("click", () => openDrill("mark", mark.id));
+      el.markRetries.append(button);
+    }
   }
 
   function goNext() {
-    const pool = currentPool();
-    if (session.index < pool.items.length - 1) {
+    const items = activeItems();
+    if (session.index < items.length - 1) {
       session.index += 1;
       renderQuestion();
       return;
     }
-    closeTimer(session.sourceId, pool.index);
-    showSummary(timerState(session.sourceId, pool.index).left <= 0);
+    if (session.drill) {
+      showSummary(false);
+      return;
+    }
+    closeTimer(session.libraryId, session.sourceId, session.poolIndex);
+    showSummary(timerState(session.libraryId, session.sourceId, session.poolIndex).left <= 0);
   }
 
   function refreshClocks(root) {
     for (const button of root.querySelectorAll("button[data-pool]")) {
       const clock = button.querySelector(".clock");
       if (!clock) continue;
-      paintClock(clock, timerState(button.dataset.source, Number(button.dataset.pool)));
+      paintClock(clock, timerState(button.dataset.library, button.dataset.source, Number(button.dataset.pool)));
     }
   }
 
   function tick() {
-    if (!el.home.hidden) {
-      refreshClocks(el.sourceList);
-      return;
-    }
-    if (!session || (el.quiz.hidden && el.summary.hidden && el.pools.hidden)) return;
+    if (!el.home.hidden) return;
+    if (!session || (el.quiz.hidden && el.summary.hidden && el.pools.hidden && el.break.hidden)) return;
     if (!el.pools.hidden) {
       refreshClocks(el.poolList);
       return;
     }
-    const state = timerState(session.sourceId, session.poolIndex);
+    if (session.drill || !session.sourceId) return;
+    const state = timerState(session.libraryId, session.sourceId, session.poolIndex);
     const left = Math.max(0, state.left);
-    el.timer.textContent = formatClock(left);
-    el.timer.classList.toggle("low", left < 60 * 1000);
-    if (!el.quiz.hidden && !state.closed && state.left <= 0) {
-      closeTimer(session.sourceId, session.poolIndex);
+    if (!el.quiz.hidden || !el.summary.hidden) {
+      el.timer.textContent = formatClock(left);
+      el.timer.classList.toggle("low", left < 60 * 1000);
+    }
+    if (!el.quiz.hidden && !session.drill && !state.closed && state.left <= 0) {
+      closeTimer(session.libraryId, session.sourceId, session.poolIndex);
       showSummary(true);
     }
   }
 
-  el.homeBtn.addEventListener("click", renderHome);
+  el.homeBtn.addEventListener("click", () => {
+    if (!el.pools.hidden || !session?.libraryId) renderLibraries();
+    else openLibrary(session.libraryId);
+  });
   el.confirm.addEventListener("click", commitAnswer);
   el.answerInput.addEventListener("input", syncTypedConfirm);
   el.answerInput.addEventListener("keydown", (event) => {
@@ -524,35 +726,48 @@
   });
   el.next.addEventListener("click", goNext);
   el.finish.addEventListener("click", () => {
-    closeTimer(session.sourceId, session.poolIndex);
-    showSummary(timerState(session.sourceId, session.poolIndex).left <= 0);
+    if (session.drill) {
+      showSummary(false);
+      return;
+    }
+    closeTimer(session.libraryId, session.sourceId, session.poolIndex);
+    showSummary(timerState(session.libraryId, session.sourceId, session.poolIndex).left <= 0);
   });
   el.review.addEventListener("click", () => {
     session.reviewing = true;
+    session.drill = null;
     session.index = 0;
     show("quiz");
     renderQuestion();
   });
+  el.wrong.addEventListener("click", () => openDrill("wrong", null));
+  for (const button of el.markButtons) {
+    button.addEventListener("click", () => {
+      const question = activeItems()[session.index];
+      if (!question) return;
+      setMark(question.id, button.dataset.mark);
+    });
+  }
   el.toBreak.addEventListener("click", () => {
-    const next = buildPools(session.sourceId)[session.poolIndex + 1];
+    const next = buildPools(session.libraryId, session.sourceId)[session.poolIndex + 1];
     show("break");
     el.timer.hidden = true;
     el.title.textContent = "Перерва";
     el.breakText.textContent = `Наступний пул ${session.poolIndex + 2}: питання № ${next.from}–${next.to}. Таймер почнеться, коли відкриєте його.`;
   });
   el.nextPool.addEventListener("click", () => openPool(session.poolIndex + 1));
-  el.breakPools.addEventListener("click", () => openPools(session.sourceId));
-  el.summaryPools.addEventListener("click", () => openPools(session.sourceId));
+  el.breakPools.addEventListener("click", () => openLibrary(session.libraryId));
+  el.summaryPools.addEventListener("click", () => openLibrary(session.libraryId));
   el.retry.addEventListener("click", () => {
     const pool = currentPool();
     const store = loadStore();
     for (const question of pool.items) delete store.answers[question.id];
-    delete store.timers[poolKey(session.sourceId, session.poolIndex)];
     saveStore(store);
+    clearTimer(session.libraryId, session.sourceId, session.poolIndex);
     openPool(pool.index);
   });
 
-  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.0.2"}`;
+  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.1.0"}`;
 
   tickId = setInterval(tick, 250);
 
@@ -575,10 +790,10 @@
       })
       .then((data) => {
         questions = data;
-        renderHome();
+        renderLibraries();
       })
       .catch(() => {
-        show("home");
+        show("libraries");
         el.loadError.hidden = false;
         el.loadError.textContent = "Не вдалося завантажити банк питань.";
       });
@@ -616,6 +831,7 @@
     el.logout.hidden = true;
     el.loginPass.value = "";
     el.loginError.hidden = true;
+    el.title.textContent = "Тренажер";
     show("login");
   });
 

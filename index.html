@@ -16,7 +16,7 @@
       document.head.appendChild(base);
     })();
   </script>
-  <link rel="stylesheet" href="assets/app.css?v=1.0.2" />
+  <link rel="stylesheet" href="assets/app.css?v=1.1.0" />
 </head>
 <body>
   <div id="app">
@@ -24,7 +24,7 @@
       <button type="button" id="btn-home" class="ghost" hidden>← Меню</button>
       <div class="title-wrap">
         <h1 id="title">Тренажер</h1>
-        <p id="app-version" class="version">Версія 1.0.2</p>
+        <p id="app-version" class="version">Версія 1.1.0</p>
       </div>
       <span id="timer" class="timer" hidden>20:00</span>
       <button type="button" id="btn-logout" class="ghost" hidden>Вийти</button>
@@ -45,8 +45,8 @@
     </main>
 
     <main id="screen-home" class="screen" hidden>
-      <p class="lead">Зараз у банку лише 2025 рік. Інших років ще немає: для них потрібні свої PDF. Оберіть пул нижче. У пулі 30 питань у порядку файлу, між пулами є перерва.</p>
-      <div id="source-list"></div>
+      <p class="lead">Оберіть бібліотеку тестів. Далі — пули в межах наявних блоків: вербальний, математичний або абстрактно-логічний.</p>
+      <div id="source-list" class="stack"></div>
       <p id="load-error" class="warn" hidden></p>
     </main>
 
@@ -66,6 +66,11 @@
 
     <main id="screen-quiz" class="screen" hidden>
       <p id="quiz-meta" class="meta"></p>
+      <div id="marks" class="marks">
+        <button type="button" class="mark" data-mark="flag" aria-pressed="false">Прапорець</button>
+        <button type="button" class="mark" data-mark="heart" aria-pressed="false">Серце</button>
+        <button type="button" class="mark" data-mark="star" aria-pressed="false">Зірка</button>
+      </div>
       <p id="prompt" class="prompt"></p>
       <div id="stimulus" class="stimulus"></div>
       <div id="choices" class="choices"></div>
@@ -89,14 +94,16 @@
       <p id="summary-text" class="lead"></p>
       <div class="stack">
         <button type="button" id="btn-review" class="secondary">Переглянути питання</button>
+        <button type="button" id="btn-wrong" class="secondary" hidden>Пройти питання з неправильною відповіддю</button>
+        <div id="mark-retries" class="stack"></div>
         <button type="button" id="btn-break" class="primary" hidden>Перерва перед наступним пулом</button>
         <button type="button" id="btn-retry" class="secondary">Пройти цей пул знову</button>
         <button type="button" id="btn-summary-pools" class="ghost">До списку пулів</button>
       </div>
     </main>
   </div>
-  <script src="assets/version.js?v=1.0.2"></script>
-  <script src="assets/auth.js?v=1.0.2"></script>
-  <script src="assets/app.js?v=1.0.2"></script>
+  <script src="assets/version.js?v=1.1.0"></script>
+  <script src="assets/auth.js?v=1.1.0"></script>
+  <script src="assets/app.js?v=1.1.1"></script>
 </body>
 </html>

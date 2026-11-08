@@ -59,6 +59,28 @@ h2 { font-size: 1.25rem; margin: 0 0 8px; }
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
+.block h3 {
+  font-size: 1rem;
+  margin: 14px 0 8px;
+  color: var(--text);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.marks { display: flex; gap: 8px; margin: 0 0 12px; }
+.mark {
+  flex: 1;
+  min-height: var(--tap);
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--card);
+  color: var(--text);
+  padding: 8px;
+}
+.mark[aria-pressed="true"] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+  font-weight: 700;
+}
 .stack { display: flex; flex-direction: column; gap: 8px; }
 .row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 
