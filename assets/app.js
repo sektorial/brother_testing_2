@@ -1203,7 +1203,7 @@
     renderQuestion();
   });
 
-  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.2.0"}`;
+  if (el.version) el.version.textContent = `Версія ${window.APP_VERSION || "1.3.0"}`;
 
   tickId = setInterval(tick, 250);
 
@@ -1239,7 +1239,7 @@
   }
 
   function startApp() {
-    fetch("data/questions.json")
+    fetch(`data/questions.json?v=${encodeURIComponent(window.APP_VERSION || "1.3.0")}`)
       .then((response) => {
         if (!response.ok) throw new Error(String(response.status));
         return response.json();
