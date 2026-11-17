@@ -78742,5 +78742,6800 @@
       "key-missing"
     ],
     "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0001",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 1,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "прапор",
+        "text": "прапор",
+        "image": null
+      },
+      {
+        "id": "населення",
+        "text": "населення",
+        "image": null
+      },
+      {
+        "id": "закон",
+        "text": "закон",
+        "image": null
+      },
+      {
+        "id": "гімн",
+        "text": "гімн",
+        "image": null
+      },
+      {
+        "id": "держава",
+        "text": "держава",
+        "image": null
+      },
+      {
+        "id": "патріотизм",
+        "text": "патріотизм",
+        "image": null
+      }
+    ],
+    "correct": [
+      "прапор",
+      "гімн"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ПРАПОР та ГІМН. Ці слова об'єднанні загальним поняттям СИМВОЛИ ДЕРЖАВНОСТІ.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0087"
+  },
+  {
+    "id": "2026-verbal-0002",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 2,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "ягода",
+        "text": "ягода",
+        "image": null
+      },
+      {
+        "id": "айва",
+        "text": "айва",
+        "image": null
+      },
+      {
+        "id": "цукат",
+        "text": "цукат",
+        "image": null
+      },
+      {
+        "id": "лимон",
+        "text": "лимон",
+        "image": null
+      },
+      {
+        "id": "вишня",
+        "text": "вишня",
+        "image": null
+      },
+      {
+        "id": "грейпфрут",
+        "text": "грейпфрут",
+        "image": null
+      }
+    ],
+    "correct": [
+      "лимон",
+      "грейпфрут"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ЛИМОН та ГРЕЙПФРУТ. Ці слова об'єднанні загальним поняттям ЦИТРУСОВІ.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0028"
+  },
+  {
+    "id": "2026-verbal-0003",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 3,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "синагога",
+        "text": "синагога",
+        "image": null
+      },
+      {
+        "id": "єпархія",
+        "text": "єпархія",
+        "image": null
+      },
+      {
+        "id": "монархія",
+        "text": "монархія",
+        "image": null
+      },
+      {
+        "id": "рака",
+        "text": "рака",
+        "image": null
+      },
+      {
+        "id": "мечеть",
+        "text": "мечеть",
+        "image": null
+      },
+      {
+        "id": "псалом",
+        "text": "псалом",
+        "image": null
+      }
+    ],
+    "correct": [
+      "синагога",
+      "мечеть"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є СИНАГОГА та МЕЧЕТЬ. Ці слова об'єднанні загальним поняттям МОЛИТОВНЕ ПРИМІЩЕННЯ.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0003"
+  },
+  {
+    "id": "2026-verbal-0004",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 4,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "морква",
+        "text": "морква",
+        "image": null
+      },
+      {
+        "id": "яблуко",
+        "text": "яблуко",
+        "image": null
+      },
+      {
+        "id": "тарілка",
+        "text": "тарілка",
+        "image": null
+      },
+      {
+        "id": "апельсин",
+        "text": "апельсин",
+        "image": null
+      },
+      {
+        "id": "сік",
+        "text": "сік",
+        "image": null
+      },
+      {
+        "id": "кухня",
+        "text": "кухня",
+        "image": null
+      }
+    ],
+    "correct": [
+      "яблуко",
+      "апельсин"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ЯБЛУКО та АПЕЛЬСИН. Ці слова об'єднанні загальним поняттям ФРУКТ.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0058"
+  },
+  {
+    "id": "2026-verbal-0005",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 5,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "школа",
+        "text": "школа",
+        "image": null
+      },
+      {
+        "id": "учень",
+        "text": "учень",
+        "image": null
+      },
+      {
+        "id": "зошит",
+        "text": "зошит",
+        "image": null
+      },
+      {
+        "id": "магазин",
+        "text": "магазин",
+        "image": null
+      },
+      {
+        "id": "інститут",
+        "text": "інститут",
+        "image": null
+      },
+      {
+        "id": "поле",
+        "text": "поле",
+        "image": null
+      }
+    ],
+    "correct": [
+      "школа",
+      "інститут"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0006",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 6,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "дурість",
+        "text": "дурість",
+        "image": null
+      },
+      {
+        "id": "тривога",
+        "text": "тривога",
+        "image": null
+      },
+      {
+        "id": "чемність",
+        "text": "чемність",
+        "image": null
+      },
+      {
+        "id": "флірт",
+        "text": "флірт",
+        "image": null
+      },
+      {
+        "id": "здоров’я",
+        "text": "здоров’я",
+        "image": null
+      },
+      {
+        "id": "страх",
+        "text": "страх",
+        "image": null
+      }
+    ],
+    "correct": [
+      "тривога",
+      "страх"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ТРИВОГА та СТРАХ. Ці слова об'єднанні загальним поняттям ЕМОЦІЯ.",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0138"
+  },
+  {
+    "id": "2026-verbal-0007",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 7,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "малина",
+        "text": "малина",
+        "image": null
+      },
+      {
+        "id": "груша",
+        "text": "груша",
+        "image": null
+      },
+      {
+        "id": "смородина",
+        "text": "смородина",
+        "image": null
+      },
+      {
+        "id": "плющ",
+        "text": "плющ",
+        "image": null
+      },
+      {
+        "id": "морква",
+        "text": "морква",
+        "image": null
+      },
+      {
+        "id": "кактус",
+        "text": "кактус",
+        "image": null
+      }
+    ],
+    "correct": [
+      "малина",
+      "смородина"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є МАЛИНА та СМОРОДИНА. Ці слова об'єднанні загальним поняттям ЯГОДИ.",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0067"
+  },
+  {
+    "id": "2026-verbal-0008",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 8,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "пальто",
+        "text": "пальто",
+        "image": null
+      },
+      {
+        "id": "стілець",
+        "text": "стілець",
+        "image": null
+      },
+      {
+        "id": "автомобіль",
+        "text": "автомобіль",
+        "image": null
+      },
+      {
+        "id": "морозиво",
+        "text": "морозиво",
+        "image": null
+      },
+      {
+        "id": "стіл",
+        "text": "стіл",
+        "image": null
+      },
+      {
+        "id": "пудра",
+        "text": "пудра",
+        "image": null
+      }
+    ],
+    "correct": [
+      "стілець",
+      "стіл"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є СТІЛЕЦЬ та СТІЛ. Ці слова об'єднанні загальним поняттям МЕБЛІ.",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0013"
+  },
+  {
+    "id": "2026-verbal-0009",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 9,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "молоко",
+        "text": "молоко",
+        "image": null
+      },
+      {
+        "id": "сорочка",
+        "text": "сорочка",
+        "image": null
+      },
+      {
+        "id": "комп’ютер",
+        "text": "комп’ютер",
+        "image": null
+      },
+      {
+        "id": "штани",
+        "text": "штани",
+        "image": null
+      },
+      {
+        "id": "лелека",
+        "text": "лелека",
+        "image": null
+      },
+      {
+        "id": "аптека",
+        "text": "аптека",
+        "image": null
+      }
+    ],
+    "correct": [
+      "сорочка",
+      "штани"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0010",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 10,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "дорожній знак",
+        "text": "дорожній знак",
+        "image": null
+      },
+      {
+        "id": "квартал",
+        "text": "квартал",
+        "image": null
+      },
+      {
+        "id": "шосе",
+        "text": "шосе",
+        "image": null
+      },
+      {
+        "id": "смуга руху",
+        "text": "смуга руху",
+        "image": null
+      },
+      {
+        "id": "тротуар",
+        "text": "тротуар",
+        "image": null
+      },
+      {
+        "id": "автомагістраль",
+        "text": "автомагістраль",
+        "image": null
+      }
+    ],
+    "correct": [
+      "шосе",
+      "автомагістраль"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ШОСЕ та АВТОМАГІСТРАЛЬ. Ці слова об'єднанні загальним поняттям ТЕРИТОРІЯ ДЛЯ РУХУ ТРАНСПОРТУ.",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0153"
+  },
+  {
+    "id": "2026-verbal-0011",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 11,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "береза",
+        "text": "береза",
+        "image": null
+      },
+      {
+        "id": "клен",
+        "text": "клен",
+        "image": null
+      },
+      {
+        "id": "трава",
+        "text": "трава",
+        "image": null
+      },
+      {
+        "id": "гілка",
+        "text": "гілка",
+        "image": null
+      },
+      {
+        "id": "горщик",
+        "text": "горщик",
+        "image": null
+      },
+      {
+        "id": "сад",
+        "text": "сад",
+        "image": null
+      }
+    ],
+    "correct": [
+      "береза",
+      "клен"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є БЕРЕЗА та КЛЕН. Ці слова об'єднанні загальним поняттям ДЕРЕВА.",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0114"
+  },
+  {
+    "id": "2026-verbal-0012",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 12,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "карантин",
+        "text": "карантин",
+        "image": null
+      },
+      {
+        "id": "аспірин",
+        "text": "аспірин",
+        "image": null
+      },
+      {
+        "id": "ромашка",
+        "text": "ромашка",
+        "image": null
+      },
+      {
+        "id": "пеніцилін",
+        "text": "пеніцилін",
+        "image": null
+      },
+      {
+        "id": "гомеопатія",
+        "text": "гомеопатія",
+        "image": null
+      },
+      {
+        "id": "бактерія",
+        "text": "бактерія",
+        "image": null
+      }
+    ],
+    "correct": [
+      "аспірин",
+      "пеніцилін"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є АСПІРИН та ПЕНІЦІЛИН. Ці слова об'єднанні загальним поняттям ЛІКИ.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0073"
+  },
+  {
+    "id": "2026-verbal-0013",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 13,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "продавець",
+        "text": "продавець",
+        "image": null
+      },
+      {
+        "id": "керівник",
+        "text": "керівник",
+        "image": null
+      },
+      {
+        "id": "акціонер",
+        "text": "акціонер",
+        "image": null
+      },
+      {
+        "id": "лікар",
+        "text": "лікар",
+        "image": null
+      },
+      {
+        "id": "підрядник",
+        "text": "підрядник",
+        "image": null
+      },
+      {
+        "id": "професіонал",
+        "text": "професіонал",
+        "image": null
+      }
+    ],
+    "correct": [
+      "продавець",
+      "лікар"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ПРОДАВЕЦЬ та ЛІКАР. Ці слова об'єднанні загальним поняттям ПРОФЕСІЇ.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0030"
+  },
+  {
+    "id": "2026-verbal-0014",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 14,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "будинок",
+        "text": "будинок",
+        "image": null
+      },
+      {
+        "id": "бельєтаж",
+        "text": "бельєтаж",
+        "image": null
+      },
+      {
+        "id": "кімната",
+        "text": "кімната",
+        "image": null
+      },
+      {
+        "id": "архітектура",
+        "text": "архітектура",
+        "image": null
+      },
+      {
+        "id": "сходи",
+        "text": "сходи",
+        "image": null
+      },
+      {
+        "id": "мансарда",
+        "text": "мансарда",
+        "image": null
+      }
+    ],
+    "correct": [
+      "бельєтаж",
+      "мансарда"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0015",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 15,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "монако",
+        "text": "монако",
+        "image": null
+      },
+      {
+        "id": "південна америка",
+        "text": "південна америка",
+        "image": null
+      },
+      {
+        "id": "азія",
+        "text": "азія",
+        "image": null
+      },
+      {
+        "id": "галапагос",
+        "text": "галапагос",
+        "image": null
+      },
+      {
+        "id": "африка",
+        "text": "африка",
+        "image": null
+      },
+      {
+        "id": "брюгге",
+        "text": "брюгге",
+        "image": null
+      }
+    ],
+    "correct": [
+      "південна америка",
+      "африка"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є АФРИКА та ПІВДЕННА АМЕРИКА. Ці слова об'єднанні загальним поняттям КОНТИНЕНТИ.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0039"
+  },
+  {
+    "id": "2026-verbal-0016",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 16,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "торгівля",
+        "text": "торгівля",
+        "image": null
+      },
+      {
+        "id": "оренда приміщення",
+        "text": "оренда приміщення",
+        "image": null
+      },
+      {
+        "id": "лізинг",
+        "text": "лізинг",
+        "image": null
+      },
+      {
+        "id": "сплата податків",
+        "text": "сплата податків",
+        "image": null
+      },
+      {
+        "id": "іпотека",
+        "text": "іпотека",
+        "image": null
+      },
+      {
+        "id": "отримання пенсії",
+        "text": "отримання пенсії",
+        "image": null
+      }
+    ],
+    "correct": [
+      "лізинг",
+      "іпотека"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Оренда приміщення, Лізинг.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0019"
+  },
+  {
+    "id": "2026-verbal-0017",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 17,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "марка",
+        "text": "марка",
+        "image": null
+      },
+      {
+        "id": "бандероль",
+        "text": "бандероль",
+        "image": null
+      },
+      {
+        "id": "пошта",
+        "text": "пошта",
+        "image": null
+      },
+      {
+        "id": "лист",
+        "text": "лист",
+        "image": null
+      },
+      {
+        "id": "штемпель",
+        "text": "штемпель",
+        "image": null
+      },
+      {
+        "id": "конверт",
+        "text": "конверт",
+        "image": null
+      }
+    ],
+    "correct": [
+      "бандероль",
+      "лист"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є БАНДЕРОЛЬ та ЛИСТ. Ці слова об'єднанні загальним поняттям ПОШТОВЕ ВІДПРАВЛЕННЯ.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0025"
+  },
+  {
+    "id": "2026-verbal-0018",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 18,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "кутюр",
+        "text": "кутюр",
+        "image": null
+      },
+      {
+        "id": "пеньюар",
+        "text": "пеньюар",
+        "image": null
+      },
+      {
+        "id": "партер",
+        "text": "партер",
+        "image": null
+      },
+      {
+        "id": "антреприза",
+        "text": "антреприза",
+        "image": null
+      },
+      {
+        "id": "оркестр",
+        "text": "оркестр",
+        "image": null
+      },
+      {
+        "id": "сцена",
+        "text": "сцена",
+        "image": null
+      }
+    ],
+    "correct": [
+      "партер",
+      "сцена"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ПАРТЕР та СЦЕНА. Ці слова об'єднанні загальним поняттям ЧАСТИНА ТЕАТРУ.",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0021"
+  },
+  {
+    "id": "2026-verbal-0019",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 19,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "віст",
+        "text": "віст",
+        "image": null
+      },
+      {
+        "id": "фуете",
+        "text": "фуете",
+        "image": null
+      },
+      {
+        "id": "полонез",
+        "text": "полонез",
+        "image": null
+      },
+      {
+        "id": "соло",
+        "text": "соло",
+        "image": null
+      },
+      {
+        "id": "твіст",
+        "text": "твіст",
+        "image": null
+      },
+      {
+        "id": "гран-прі",
+        "text": "гран-прі",
+        "image": null
+      }
+    ],
+    "correct": [
+      "полонез",
+      "твіст"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ПОЛОНЕЗ та ТВІСТ. Ці слова об'єднанні загальним поняттям ТАНЦІ.",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0135"
+  },
+  {
+    "id": "2026-verbal-0020",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 20,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "бордо",
+        "text": "бордо",
+        "image": null
+      },
+      {
+        "id": "каркаде",
+        "text": "каркаде",
+        "image": null
+      },
+      {
+        "id": "вода",
+        "text": "вода",
+        "image": null
+      },
+      {
+        "id": "тан",
+        "text": "тан",
+        "image": null
+      },
+      {
+        "id": "ройбуш",
+        "text": "ройбуш",
+        "image": null
+      },
+      {
+        "id": "фреш",
+        "text": "фреш",
+        "image": null
+      }
+    ],
+    "correct": [
+      "каркаде",
+      "ройбуш"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0021",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 21,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "вода",
+        "text": "вода",
+        "image": null
+      },
+      {
+        "id": "кисень",
+        "text": "кисень",
+        "image": null
+      },
+      {
+        "id": "кислота",
+        "text": "кислота",
+        "image": null
+      },
+      {
+        "id": "азот",
+        "text": "азот",
+        "image": null
+      },
+      {
+        "id": "грунт",
+        "text": "грунт",
+        "image": null
+      },
+      {
+        "id": "кремній",
+        "text": "кремній",
+        "image": null
+      }
+    ],
+    "correct": [
+      "кисень",
+      "азот"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є КИСЕНЬ та АЗОТ. Ці слова об'єднанні загальним поняттям ХІМІЧНІ ЕЛЕМЕНТИ.",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0146"
+  },
+  {
+    "id": "2026-verbal-0022",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 22,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "сулугуні",
+        "text": "сулугуні",
+        "image": null
+      },
+      {
+        "id": "прошутто",
+        "text": "прошутто",
+        "image": null
+      },
+      {
+        "id": "суші",
+        "text": "суші",
+        "image": null
+      },
+      {
+        "id": "ролліні",
+        "text": "ролліні",
+        "image": null
+      },
+      {
+        "id": "лемончелло",
+        "text": "лемончелло",
+        "image": null
+      },
+      {
+        "id": "вареники",
+        "text": "вареники",
+        "image": null
+      }
+    ],
+    "correct": [
+      "ролліні",
+      "вареники"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0023",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 23,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "вінтаж",
+        "text": "вінтаж",
+        "image": null
+      },
+      {
+        "id": "епатаж",
+        "text": "епатаж",
+        "image": null
+      },
+      {
+        "id": "декор",
+        "text": "декор",
+        "image": null
+      },
+      {
+        "id": "етно",
+        "text": "етно",
+        "image": null
+      },
+      {
+        "id": "декупаж",
+        "text": "декупаж",
+        "image": null
+      },
+      {
+        "id": "корсаж",
+        "text": "корсаж",
+        "image": null
+      }
+    ],
+    "correct": [
+      "вінтаж",
+      "етно"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0024",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 24,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "джаз",
+        "text": "джаз",
+        "image": null
+      },
+      {
+        "id": "водевіль",
+        "text": "водевіль",
+        "image": null
+      },
+      {
+        "id": "оркестр",
+        "text": "оркестр",
+        "image": null
+      },
+      {
+        "id": "мюзикл",
+        "text": "мюзикл",
+        "image": null
+      },
+      {
+        "id": "театр",
+        "text": "театр",
+        "image": null
+      },
+      {
+        "id": "партитура",
+        "text": "партитура",
+        "image": null
+      }
+    ],
+    "correct": [
+      "водевіль",
+      "мюзикл"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є ВОДЕВІЛЬ та МЮЗИКЛ. Ці слова об'єднанні загальним поняттям МУЗИЧНО- СЦЕНІЧНІ ВИСТАВИ.",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0110"
+  },
+  {
+    "id": "2026-verbal-0025",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 25,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "ампер",
+        "text": "ампер",
+        "image": null
+      },
+      {
+        "id": "тиждень",
+        "text": "тиждень",
+        "image": null
+      },
+      {
+        "id": "секунда",
+        "text": "секунда",
+        "image": null
+      },
+      {
+        "id": "швидкість",
+        "text": "швидкість",
+        "image": null
+      },
+      {
+        "id": "понеділок",
+        "text": "понеділок",
+        "image": null
+      },
+      {
+        "id": "спідометр",
+        "text": "спідометр",
+        "image": null
+      }
+    ],
+    "correct": [
+      "тиждень",
+      "секунда"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Ампер, Секунда.",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0027"
+  },
+  {
+    "id": "2026-verbal-0026",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 26,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "барельєф",
+        "text": "барельєф",
+        "image": null
+      },
+      {
+        "id": "бюст",
+        "text": "бюст",
+        "image": null
+      },
+      {
+        "id": "скульптура",
+        "text": "скульптура",
+        "image": null
+      },
+      {
+        "id": "мистецтво",
+        "text": "мистецтво",
+        "image": null
+      },
+      {
+        "id": "графіка",
+        "text": "графіка",
+        "image": null
+      },
+      {
+        "id": "театр",
+        "text": "театр",
+        "image": null
+      }
+    ],
+    "correct": [
+      "скульптура",
+      "графіка"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0027",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 27,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "єнот",
+        "text": "єнот",
+        "image": null
+      },
+      {
+        "id": "кальмар",
+        "text": "кальмар",
+        "image": null
+      },
+      {
+        "id": "бізон",
+        "text": "бізон",
+        "image": null
+      },
+      {
+        "id": "капібара",
+        "text": "капібара",
+        "image": null
+      },
+      {
+        "id": "пітон",
+        "text": "пітон",
+        "image": null
+      },
+      {
+        "id": "сова",
+        "text": "сова",
+        "image": null
+      }
+    ],
+    "correct": [
+      "бізон",
+      "капібара"
+    ],
+    "explanation": "Поняттями одного порядку в цьому завданні є БІЗОН та КАПІБАРА. Ці слова об'єднанні загальним поняттям ТРАВОЇДНІ ССАВЦІ.",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0016"
+  },
+  {
+    "id": "2026-verbal-0028",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 28,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "варварство",
+        "text": "варварство",
+        "image": null
+      },
+      {
+        "id": "суфражизм",
+        "text": "суфражизм",
+        "image": null
+      },
+      {
+        "id": "вандалізм",
+        "text": "вандалізм",
+        "image": null
+      },
+      {
+        "id": "образа",
+        "text": "образа",
+        "image": null
+      },
+      {
+        "id": "хуліганство",
+        "text": "хуліганство",
+        "image": null
+      },
+      {
+        "id": "конформізм",
+        "text": "конформізм",
+        "image": null
+      }
+    ],
+    "correct": [
+      "вандалізм",
+      "хуліганство"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Варварство, Вандалізм.",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0037"
+  },
+  {
+    "id": "2026-verbal-0029",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 29,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "онук",
+        "text": "онук",
+        "image": null
+      },
+      {
+        "id": "старець",
+        "text": "старець",
+        "image": null
+      },
+      {
+        "id": "помічник",
+        "text": "помічник",
+        "image": null
+      },
+      {
+        "id": "кум",
+        "text": "кум",
+        "image": null
+      },
+      {
+        "id": "родина",
+        "text": "родина",
+        "image": null
+      },
+      {
+        "id": "шурин",
+        "text": "шурин",
+        "image": null
+      }
+    ],
+    "correct": [
+      "онук",
+      "шурин"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Кум, Шурин.",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0145"
+  },
+  {
+    "id": "2026-verbal-0030",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 30,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "викладати",
+        "text": "викладати",
+        "image": null
+      },
+      {
+        "id": "красти",
+        "text": "красти",
+        "image": null
+      },
+      {
+        "id": "байдикувати",
+        "text": "байдикувати",
+        "image": null
+      },
+      {
+        "id": "шити одяг",
+        "text": "шити одяг",
+        "image": null
+      },
+      {
+        "id": "дарувати",
+        "text": "дарувати",
+        "image": null
+      },
+      {
+        "id": "збагачуватись",
+        "text": "збагачуватись",
+        "image": null
+      }
+    ],
+    "correct": [
+      "викладати",
+      "шити одяг"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0031",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 31,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "свійський",
+        "text": "свійський",
+        "image": null
+      },
+      {
+        "id": "родинний",
+        "text": "родинний",
+        "image": null
+      },
+      {
+        "id": "дикий",
+        "text": "дикий",
+        "image": null
+      },
+      {
+        "id": "комунікабельний",
+        "text": "комунікабельний",
+        "image": null
+      },
+      {
+        "id": "світський",
+        "text": "світський",
+        "image": null
+      },
+      {
+        "id": "близький",
+        "text": "близький",
+        "image": null
+      }
+    ],
+    "correct": [
+      "свійський",
+      "дикий"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Родинний, Близький.",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0115"
+  },
+  {
+    "id": "2026-verbal-0032",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 32,
+    "subtype": "pair",
+    "prompt": "Серед представлених слів оберіть два поняття одного порядку:",
+    "interaction": "pair",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "канцелярія",
+        "text": "канцелярія",
+        "image": null
+      },
+      {
+        "id": "директорія",
+        "text": "директорія",
+        "image": null
+      },
+      {
+        "id": "автократія",
+        "text": "автократія",
+        "image": null
+      },
+      {
+        "id": "бюрократія",
+        "text": "бюрократія",
+        "image": null
+      },
+      {
+        "id": "монархія",
+        "text": "монархія",
+        "image": null
+      },
+      {
+        "id": "правління",
+        "text": "правління",
+        "image": null
+      }
+    ],
+    "correct": [
+      "директорія",
+      "монархія"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Автократія, Монархія.",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0123"
+  },
+  {
+    "id": "2026-verbal-0033",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 33,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: скрипка : струна = барабан : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "паличка",
+        "text": "паличка",
+        "image": null
+      },
+      {
+        "id": "удар",
+        "text": "удар",
+        "image": null
+      },
+      {
+        "id": "мембрана",
+        "text": "мембрана",
+        "image": null
+      },
+      {
+        "id": "смичок",
+        "text": "смичок",
+        "image": null
+      },
+      {
+        "id": "долоня",
+        "text": "долоня",
+        "image": null
+      }
+    ],
+    "correct": [
+      "мембрана"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0034",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 34,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: дощ : злива = страх : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "небезпека",
+        "text": "небезпека",
+        "image": null
+      },
+      {
+        "id": "сміливість",
+        "text": "сміливість",
+        "image": null
+      },
+      {
+        "id": "агресія",
+        "text": "агресія",
+        "image": null
+      },
+      {
+        "id": "паніка",
+        "text": "паніка",
+        "image": null
+      },
+      {
+        "id": "емоція",
+        "text": "емоція",
+        "image": null
+      }
+    ],
+    "correct": [
+      "паніка"
+    ],
+    "explanation": "Злива відноситься до Дощу, як сильний Дощ, та його більша інтенсивність. За аналогією, так само як Паніка до Страху.",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0079"
+  },
+  {
+    "id": "2026-verbal-0035",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 35,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: прихильність : фанатизм = слабкість : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "неприязнь",
+        "text": "неприязнь",
+        "image": null
+      },
+      {
+        "id": "неміч",
+        "text": "неміч",
+        "image": null
+      },
+      {
+        "id": "міць",
+        "text": "міць",
+        "image": null
+      },
+      {
+        "id": "втома",
+        "text": "втома",
+        "image": null
+      },
+      {
+        "id": "симпатія",
+        "text": "симпатія",
+        "image": null
+      }
+    ],
+    "correct": [
+      "неміч"
+    ],
+    "explanation": "Дані пари слів Прихильність - Фанатизм є подібними один до одного. Так само, як і Слабкість - Неміч.",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0111"
+  },
+  {
+    "id": "2026-verbal-0036",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 36,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: гривня : копійка = долар : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "марка",
+        "text": "марка",
+        "image": null
+      },
+      {
+        "id": "рубль",
+        "text": "рубль",
+        "image": null
+      },
+      {
+        "id": "крона",
+        "text": "крона",
+        "image": null
+      },
+      {
+        "id": "цент",
+        "text": "цент",
+        "image": null
+      },
+      {
+        "id": "злотий",
+        "text": "злотий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "цент"
+    ],
+    "explanation": "У нас утворюється пара Гривня - Копійка, загальне : частка, де Копійка - найменша величина, а Гривня, за аналогією - найбільша. Отже, за аналогією треба підібрати до слова Долар слово частку. Отже, це слово - Цент.",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0095"
+  },
+  {
+    "id": "2026-verbal-0037",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 37,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: тигр : тварина = фіалка : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "сніг",
+        "text": "сніг",
+        "image": null
+      },
+      {
+        "id": "собака",
+        "text": "собака",
+        "image": null
+      },
+      {
+        "id": "рослина",
+        "text": "рослина",
+        "image": null
+      },
+      {
+        "id": "пиріг",
+        "text": "пиріг",
+        "image": null
+      },
+      {
+        "id": "троянда",
+        "text": "троянда",
+        "image": null
+      }
+    ],
+    "correct": [
+      "рослина"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0038",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 38,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: ліс : дерево = суспільство : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "ієрархія",
+        "text": "ієрархія",
+        "image": null
+      },
+      {
+        "id": "людина",
+        "text": "людина",
+        "image": null
+      },
+      {
+        "id": "інститут",
+        "text": "інститут",
+        "image": null
+      },
+      {
+        "id": "влада",
+        "text": "влада",
+        "image": null
+      },
+      {
+        "id": "родина",
+        "text": "родина",
+        "image": null
+      }
+    ],
+    "correct": [
+      "людина"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Влада.",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0017"
+  },
+  {
+    "id": "2026-verbal-0039",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 39,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: червоний : рожевий = гарячий : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "холодний",
+        "text": "холодний",
+        "image": null
+      },
+      {
+        "id": "теплий",
+        "text": "теплий",
+        "image": null
+      },
+      {
+        "id": "пекучий",
+        "text": "пекучий",
+        "image": null
+      },
+      {
+        "id": "рідкий",
+        "text": "рідкий",
+        "image": null
+      },
+      {
+        "id": "розплавлений",
+        "text": "розплавлений",
+        "image": null
+      }
+    ],
+    "correct": [
+      "теплий"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0040",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 40,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: мова : лінгвістика = планета : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "астрологія",
+        "text": "астрологія",
+        "image": null
+      },
+      {
+        "id": "астронавтика",
+        "text": "астронавтика",
+        "image": null
+      },
+      {
+        "id": "космонавтика",
+        "text": "космонавтика",
+        "image": null
+      },
+      {
+        "id": "астрономія",
+        "text": "астрономія",
+        "image": null
+      },
+      {
+        "id": "уфологія",
+        "text": "уфологія",
+        "image": null
+      }
+    ],
+    "correct": [
+      "астрономія"
+    ],
+    "explanation": "Лінгвістика - наука, яка вивчає Мову. Так само, як і Астрономія - наука про вивчення Планет.",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0018"
+  },
+  {
+    "id": "2026-verbal-0041",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 41,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: особистий : спільний = індивідуальний : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "особливий",
+        "text": "особливий",
+        "image": null
+      },
+      {
+        "id": "окремий",
+        "text": "окремий",
+        "image": null
+      },
+      {
+        "id": "вільний",
+        "text": "вільний",
+        "image": null
+      },
+      {
+        "id": "колективний",
+        "text": "колективний",
+        "image": null
+      },
+      {
+        "id": "приватний",
+        "text": "приватний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "колективний"
+    ],
+    "explanation": "Дані пари слів Особистий - Спільний є протилежними один до одного. Так само, як і Індивідуальний - Колективний.",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0100"
+  },
+  {
+    "id": "2026-verbal-0042",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 42,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: довжина : ширина = висота : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "об’єм",
+        "text": "об’єм",
+        "image": null
+      },
+      {
+        "id": "розмір",
+        "text": "розмір",
+        "image": null
+      },
+      {
+        "id": "вага",
+        "text": "вага",
+        "image": null
+      },
+      {
+        "id": "форма",
+        "text": "форма",
+        "image": null
+      },
+      {
+        "id": "глибина",
+        "text": "глибина",
+        "image": null
+      }
+    ],
+    "correct": [
+      "глибина"
+    ],
+    "explanation": "Дані пари слів Довжина - Ширина є протилежними один до одного. Так само, як і Висота - Глибина.",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0129"
+  },
+  {
+    "id": "2026-verbal-0043",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 43,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: дерево : дрова = трава : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "стежка",
+        "text": "стежка",
+        "image": null
+      },
+      {
+        "id": "луг",
+        "text": "луг",
+        "image": null
+      },
+      {
+        "id": "сіно",
+        "text": "сіно",
+        "image": null
+      },
+      {
+        "id": "качка",
+        "text": "качка",
+        "image": null
+      },
+      {
+        "id": "зерно",
+        "text": "зерно",
+        "image": null
+      }
+    ],
+    "correct": [
+      "сіно"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0044",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 44,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: бадьорий : втомлений = жвавий : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "енергійний",
+        "text": "енергійний",
+        "image": null
+      },
+      {
+        "id": "млявий",
+        "text": "млявий",
+        "image": null
+      },
+      {
+        "id": "живий",
+        "text": "живий",
+        "image": null
+      },
+      {
+        "id": "слабкий",
+        "text": "слабкий",
+        "image": null
+      },
+      {
+        "id": "скромний",
+        "text": "скромний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "млявий"
+    ],
+    "explanation": "Дані пари слів Бадьорий - Втомлений є протилежними один до одного. Так само, як і Жвавий - Млявий.",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0124"
+  },
+  {
+    "id": "2026-verbal-0045",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 45,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: могутній : сильний = строкатий : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "норовливий",
+        "text": "норовливий",
+        "image": null
+      },
+      {
+        "id": "агресивний",
+        "text": "агресивний",
+        "image": null
+      },
+      {
+        "id": "багряний",
+        "text": "багряний",
+        "image": null
+      },
+      {
+        "id": "кольоровий",
+        "text": "кольоровий",
+        "image": null
+      },
+      {
+        "id": "гострий",
+        "text": "гострий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "кольоровий"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0046",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 46,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: тьмяний : архаїчний = яскравий : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "гарний",
+        "text": "гарний",
+        "image": null
+      },
+      {
+        "id": "нетрадиційний",
+        "text": "нетрадиційний",
+        "image": null
+      },
+      {
+        "id": "відомий",
+        "text": "відомий",
+        "image": null
+      },
+      {
+        "id": "застарілий",
+        "text": "застарілий",
+        "image": null
+      },
+      {
+        "id": "сучасний",
+        "text": "сучасний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "сучасний"
+    ],
+    "explanation": "Лише у 20% типів таких завдань логічний зв'язок утворюється не злівої частини завдання (до знака дорівнює), а зліва та праворуч (тобто через знак дорівнює). Тому, дані пари слів Тьмяний - Яскравий є протилежними один до одного. Так само, як і Архаїчний - Сучасний.",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0074"
+  },
+  {
+    "id": "2026-verbal-0047",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 47,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: скромність : пиха = епізодичний : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "систематичний",
+        "text": "систематичний",
+        "image": null
+      },
+      {
+        "id": "нерегулярний",
+        "text": "нерегулярний",
+        "image": null
+      },
+      {
+        "id": "багатосерійний",
+        "text": "багатосерійний",
+        "image": null
+      },
+      {
+        "id": "тривалий",
+        "text": "тривалий",
+        "image": null
+      },
+      {
+        "id": "системний",
+        "text": "системний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "систематичний"
+    ],
+    "explanation": "Дані пари слів Скромність - Пиха є протилежними один до одного. Так само, як і Епізодичний - Систематичний.",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0038"
+  },
+  {
+    "id": "2026-verbal-0048",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 48,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: мушля : перлина = твір : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "автор",
+        "text": "автор",
+        "image": null
+      },
+      {
+        "id": "глава",
+        "text": "глава",
+        "image": null
+      },
+      {
+        "id": "композиція",
+        "text": "композиція",
+        "image": null
+      },
+      {
+        "id": "ідея",
+        "text": "ідея",
+        "image": null
+      },
+      {
+        "id": "оповідання",
+        "text": "оповідання",
+        "image": null
+      }
+    ],
+    "correct": [
+      "ідея"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Композиція.",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0057"
+  },
+  {
+    "id": "2026-verbal-0049",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 49,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: колонія : бактерія = архіпелаг : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "церква",
+        "text": "церква",
+        "image": null
+      },
+      {
+        "id": "зірка",
+        "text": "зірка",
+        "image": null
+      },
+      {
+        "id": "острів",
+        "text": "острів",
+        "image": null
+      },
+      {
+        "id": "поселення",
+        "text": "поселення",
+        "image": null
+      },
+      {
+        "id": "людина",
+        "text": "людина",
+        "image": null
+      }
+    ],
+    "correct": [
+      "острів"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0050",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 50,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: річка : джерело = професіоналізм : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "вміння",
+        "text": "вміння",
+        "image": null
+      },
+      {
+        "id": "досвід",
+        "text": "досвід",
+        "image": null
+      },
+      {
+        "id": "посада",
+        "text": "посада",
+        "image": null
+      },
+      {
+        "id": "особистість",
+        "text": "особистість",
+        "image": null
+      },
+      {
+        "id": "робота",
+        "text": "робота",
+        "image": null
+      }
+    ],
+    "correct": [
+      "досвід"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0051",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 51,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: пустощі : покарання = злива : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "дощ",
+        "text": "дощ",
+        "image": null
+      },
+      {
+        "id": "вода",
+        "text": "вода",
+        "image": null
+      },
+      {
+        "id": "хмарність",
+        "text": "хмарність",
+        "image": null
+      },
+      {
+        "id": "веселка",
+        "text": "веселка",
+        "image": null
+      },
+      {
+        "id": "повінь",
+        "text": "повінь",
+        "image": null
+      }
+    ],
+    "correct": [
+      "повінь"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Веселка.",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0148"
+  },
+  {
+    "id": "2026-verbal-0052",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 52,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: тістечко : солодощі = профіль : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "анфас",
+        "text": "анфас",
+        "image": null
+      },
+      {
+        "id": "ракурс",
+        "text": "ракурс",
+        "image": null
+      },
+      {
+        "id": "обличчя",
+        "text": "обличчя",
+        "image": null
+      },
+      {
+        "id": "картина",
+        "text": "картина",
+        "image": null
+      },
+      {
+        "id": "соцмережа",
+        "text": "соцмережа",
+        "image": null
+      }
+    ],
+    "correct": [
+      "ракурс"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Анфас.",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0004"
+  },
+  {
+    "id": "2026-verbal-0053",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 53,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: інноваційний : традиційний = матеріалістичний : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "матеріальний",
+        "text": "матеріальний",
+        "image": null
+      },
+      {
+        "id": "реальний",
+        "text": "реальний",
+        "image": null
+      },
+      {
+        "id": "регресивний",
+        "text": "регресивний",
+        "image": null
+      },
+      {
+        "id": "ідеалістичний",
+        "text": "ідеалістичний",
+        "image": null
+      },
+      {
+        "id": "абстрактний",
+        "text": "абстрактний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "ідеалістичний"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0054",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 54,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: фундамент : будинок = аксіома : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "наука",
+        "text": "наука",
+        "image": null
+      },
+      {
+        "id": "думка",
+        "text": "думка",
+        "image": null
+      },
+      {
+        "id": "геометрія",
+        "text": "геометрія",
+        "image": null
+      },
+      {
+        "id": "формула",
+        "text": "формула",
+        "image": null
+      },
+      {
+        "id": "доказ",
+        "text": "доказ",
+        "image": null
+      }
+    ],
+    "correct": [
+      "доказ"
+    ],
+    "explanation": "Фундамент є основою Будинка. Так само, як і в основі Аксіоми є Доказ.",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0080"
+  },
+  {
+    "id": "2026-verbal-0055",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 55,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: крихкий : міцний = самобутній : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "тривіальний",
+        "text": "тривіальний",
+        "image": null
+      },
+      {
+        "id": "залежний",
+        "text": "залежний",
+        "image": null
+      },
+      {
+        "id": "оригінальний",
+        "text": "оригінальний",
+        "image": null
+      },
+      {
+        "id": "альтруїстичний",
+        "text": "альтруїстичний",
+        "image": null
+      },
+      {
+        "id": "сімейний",
+        "text": "сімейний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "тривіальний"
+    ],
+    "explanation": "Дані пари слів Крихкий - Міцний є протилежними один до одного. Так само, як і Самобутній - Тривіальний.",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0137"
+  },
+  {
+    "id": "2026-verbal-0056",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 56,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: розвиток : занепад = респектабельний : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "підозрілий",
+        "text": "підозрілий",
+        "image": null
+      },
+      {
+        "id": "легковажний",
+        "text": "легковажний",
+        "image": null
+      },
+      {
+        "id": "бідний",
+        "text": "бідний",
+        "image": null
+      },
+      {
+        "id": "дурний",
+        "text": "дурний",
+        "image": null
+      },
+      {
+        "id": "фешенебельний",
+        "text": "фешенебельний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "підозрілий"
+    ],
+    "explanation": "Дані пари слів Розвиток - Занепад є протилежними один до одного. Так само, як і Респектабельний - Підозрілий.",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0117"
+  },
+  {
+    "id": "2026-verbal-0057",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 57,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: інститут : факультет = зграя : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "рій",
+        "text": "рій",
+        "image": null
+      },
+      {
+        "id": "риба",
+        "text": "риба",
+        "image": null
+      },
+      {
+        "id": "сокіл",
+        "text": "сокіл",
+        "image": null
+      },
+      {
+        "id": "студент",
+        "text": "студент",
+        "image": null
+      },
+      {
+        "id": "мураха",
+        "text": "мураха",
+        "image": null
+      }
+    ],
+    "correct": [
+      "риба"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Рій.",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0150"
+  },
+  {
+    "id": "2026-verbal-0058",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 58,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: тварина : емоція = кішка : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "дикість",
+        "text": "дикість",
+        "image": null
+      },
+      {
+        "id": "лев",
+        "text": "лев",
+        "image": null
+      },
+      {
+        "id": "незалежність",
+        "text": "незалежність",
+        "image": null
+      },
+      {
+        "id": "гнів",
+        "text": "гнів",
+        "image": null
+      },
+      {
+        "id": "турбота",
+        "text": "турбота",
+        "image": null
+      }
+    ],
+    "correct": [
+      "гнів"
+    ],
+    "explanation": "Лише у 20% типів таких завдань логічний зв'язок утворюється не злівої частини завдання (до знака дорівнює), а зліва та праворуч (тобто через знак дорівнює). У нас утворюється пара Тварина - Кішка, загальне : частка, де Кішка - це вид Тварин. Отже, за аналогією, Гнів є видом Емоцій.",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0105"
+  },
+  {
+    "id": "2026-verbal-0059",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 59,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: інсектицид : комаха = нігілізм : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "переконання",
+        "text": "переконання",
+        "image": null
+      },
+      {
+        "id": "конформізм",
+        "text": "конформізм",
+        "image": null
+      },
+      {
+        "id": "канон",
+        "text": "канон",
+        "image": null
+      },
+      {
+        "id": "заперечення",
+        "text": "заперечення",
+        "image": null
+      },
+      {
+        "id": "скептицизм",
+        "text": "скептицизм",
+        "image": null
+      }
+    ],
+    "correct": [
+      "канон"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0060",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 60,
+    "subtype": "analogy",
+    "prompt": "Серед представлених слів оберіть те, що доповнює смислове відношення: речення : присудок = літосфера : ?",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "спека",
+        "text": "спека",
+        "image": null
+      },
+      {
+        "id": "материк",
+        "text": "материк",
+        "image": null
+      },
+      {
+        "id": "повітря",
+        "text": "повітря",
+        "image": null
+      },
+      {
+        "id": "атмосфера",
+        "text": "атмосфера",
+        "image": null
+      },
+      {
+        "id": "лава",
+        "text": "лава",
+        "image": null
+      }
+    ],
+    "correct": [
+      "материк"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0061",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 61,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова долина",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "ліс",
+        "text": "ліс",
+        "image": null
+      },
+      {
+        "id": "ширина",
+        "text": "ширина",
+        "image": null
+      },
+      {
+        "id": "швидкість",
+        "text": "швидкість",
+        "image": null
+      },
+      {
+        "id": "гора",
+        "text": "гора",
+        "image": null
+      },
+      {
+        "id": "простір",
+        "text": "простір",
+        "image": null
+      }
+    ],
+    "correct": [
+      "гора"
+    ],
+    "explanation": "Правильна відповідь тут - «ГОРА» Саме це слово зі списку є протилежним за значенням до слова «Долина».",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0008"
+  },
+  {
+    "id": "2026-verbal-0062",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 62,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова анафема",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "диктатура",
+        "text": "диктатура",
+        "image": null
+      },
+      {
+        "id": "покута",
+        "text": "покута",
+        "image": null
+      },
+      {
+        "id": "благословення",
+        "text": "благословення",
+        "image": null
+      },
+      {
+        "id": "порядок",
+        "text": "порядок",
+        "image": null
+      },
+      {
+        "id": "індульгенція",
+        "text": "індульгенція",
+        "image": null
+      }
+    ],
+    "correct": [
+      "благословення"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0063",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 63,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова вербувати",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "звільняти",
+        "text": "звільняти",
+        "image": null
+      },
+      {
+        "id": "позбавлятись",
+        "text": "позбавлятись",
+        "image": null
+      },
+      {
+        "id": "скасовувати",
+        "text": "скасовувати",
+        "image": null
+      },
+      {
+        "id": "зраджувати",
+        "text": "зраджувати",
+        "image": null
+      },
+      {
+        "id": "конкурувати",
+        "text": "конкурувати",
+        "image": null
+      }
+    ],
+    "correct": [
+      "звільняти"
+    ],
+    "explanation": "Правильна відповідь тут - «ЗВІЛЬНЯТИ» Саме це слово зі списку є протилежним за значенням до слова «Вербувати».",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0112"
+  },
+  {
+    "id": "2026-verbal-0064",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 64,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова атрактивний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "привабливий",
+        "text": "привабливий",
+        "image": null
+      },
+      {
+        "id": "спонтанний",
+        "text": "спонтанний",
+        "image": null
+      },
+      {
+        "id": "добровільний",
+        "text": "добровільний",
+        "image": null
+      },
+      {
+        "id": "ініціативний",
+        "text": "ініціативний",
+        "image": null
+      },
+      {
+        "id": "складний",
+        "text": "складний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "привабливий"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0065",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 65,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова паритет",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "рівноправність",
+        "text": "рівноправність",
+        "image": null
+      },
+      {
+        "id": "розповсюдженість",
+        "text": "розповсюдженість",
+        "image": null
+      },
+      {
+        "id": "правовірність",
+        "text": "правовірність",
+        "image": null
+      },
+      {
+        "id": "захищеність",
+        "text": "захищеність",
+        "image": null
+      },
+      {
+        "id": "домовленість",
+        "text": "домовленість",
+        "image": null
+      }
+    ],
+    "correct": [
+      "рівноправність"
+    ],
+    "explanation": "Правильна відповідь тут - «РІВНОПРАВНІСТЬ» Саме це слово зі списку є близьким за значенням до слова «Паритет».",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0091"
+  },
+  {
+    "id": "2026-verbal-0066",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 66,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова кліше",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "штамп",
+        "text": "штамп",
+        "image": null
+      },
+      {
+        "id": "спідниця",
+        "text": "спідниця",
+        "image": null
+      },
+      {
+        "id": "аташе",
+        "text": "аташе",
+        "image": null
+      },
+      {
+        "id": "па",
+        "text": "па",
+        "image": null
+      },
+      {
+        "id": "вислів",
+        "text": "вислів",
+        "image": null
+      }
+    ],
+    "correct": [
+      "штамп"
+    ],
+    "explanation": "У попередній бібліотеці ключ інший: Вислів.",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [
+      "key-differs"
+    ],
+    "duplicate_of": "2025-verbal-gold-0077"
+  },
+  {
+    "id": "2026-verbal-0067",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 67,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова кольоровий",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "грайливий",
+        "text": "грайливий",
+        "image": null
+      },
+      {
+        "id": "різнобарвний",
+        "text": "різнобарвний",
+        "image": null
+      },
+      {
+        "id": "веселковий",
+        "text": "веселковий",
+        "image": null
+      },
+      {
+        "id": "чарівний",
+        "text": "чарівний",
+        "image": null
+      },
+      {
+        "id": "мінливий",
+        "text": "мінливий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "різнобарвний"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0068",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 68,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова обрис",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "засіб",
+        "text": "засіб",
+        "image": null
+      },
+      {
+        "id": "контур",
+        "text": "контур",
+        "image": null
+      },
+      {
+        "id": "малюнок",
+        "text": "малюнок",
+        "image": null
+      },
+      {
+        "id": "опис",
+        "text": "опис",
+        "image": null
+      },
+      {
+        "id": "зміст",
+        "text": "зміст",
+        "image": null
+      }
+    ],
+    "correct": [
+      "контур"
+    ],
+    "explanation": "Правильна відповідь тут - «КОНТУР» Саме це слово зі списку є близьким за значенням до слова «Обрис».",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0134"
+  },
+  {
+    "id": "2026-verbal-0069",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 69,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова легкодухий",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "легковажний",
+        "text": "легковажний",
+        "image": null
+      },
+      {
+        "id": "відважний",
+        "text": "відважний",
+        "image": null
+      },
+      {
+        "id": "самостійний",
+        "text": "самостійний",
+        "image": null
+      },
+      {
+        "id": "кремезний",
+        "text": "кремезний",
+        "image": null
+      },
+      {
+        "id": "порожній",
+        "text": "порожній",
+        "image": null
+      }
+    ],
+    "correct": [
+      "відважний"
+    ],
+    "explanation": "Правильна відповідь тут - «ВІДВАЖНИЙ» Саме це слово зі списку є протилежним за значенням до слова «Легкодухий».",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0051"
+  },
+  {
+    "id": "2026-verbal-0070",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 70,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, найбільш протилежне за значенням до слова вимогливість",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "нетерпимість",
+        "text": "нетерпимість",
+        "image": null
+      },
+      {
+        "id": "невизначеність",
+        "text": "невизначеність",
+        "image": null
+      },
+      {
+        "id": "підступність",
+        "text": "підступність",
+        "image": null
+      },
+      {
+        "id": "поблажливість",
+        "text": "поблажливість",
+        "image": null
+      },
+      {
+        "id": "невпевненість",
+        "text": "невпевненість",
+        "image": null
+      }
+    ],
+    "correct": [
+      "поблажливість"
+    ],
+    "explanation": "Правильна відповідь тут - «ПОБЛАЖЛИВІСТЬ» Саме це слово зі списку є протилежним за значенням до слова «Вимогливість».",
+    "page_images": [],
+    "source_pages": [
+      16
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0062"
+  },
+  {
+    "id": "2026-verbal-0071",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 71,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова превалювати",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "жартувати",
+        "text": "жартувати",
+        "image": null
+      },
+      {
+        "id": "зневажати",
+        "text": "зневажати",
+        "image": null
+      },
+      {
+        "id": "переважати",
+        "text": "переважати",
+        "image": null
+      },
+      {
+        "id": "ніяковіти",
+        "text": "ніяковіти",
+        "image": null
+      },
+      {
+        "id": "обходити",
+        "text": "обходити",
+        "image": null
+      }
+    ],
+    "correct": [
+      "переважати"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      16
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0072",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 72,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова антураж",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "середовище",
+        "text": "середовище",
+        "image": null
+      },
+      {
+        "id": "стиль",
+        "text": "стиль",
+        "image": null
+      },
+      {
+        "id": "перебільшення",
+        "text": "перебільшення",
+        "image": null
+      },
+      {
+        "id": "зверхність",
+        "text": "зверхність",
+        "image": null
+      },
+      {
+        "id": "аксесуари",
+        "text": "аксесуари",
+        "image": null
+      }
+    ],
+    "correct": [
+      "середовище"
+    ],
+    "explanation": "Правильна відповідь тут - «СЕРЕДОВИЩЕ» Саме це слово зі списку є близьким за значенням до слова «Антураж».",
+    "page_images": [],
+    "source_pages": [
+      16
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0031"
+  },
+  {
+    "id": "2026-verbal-0073",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 73,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова автохтонний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "самостійний",
+        "text": "самостійний",
+        "image": null
+      },
+      {
+        "id": "постійний",
+        "text": "постійний",
+        "image": null
+      },
+      {
+        "id": "корінний",
+        "text": "корінний",
+        "image": null
+      },
+      {
+        "id": "автоматичний",
+        "text": "автоматичний",
+        "image": null
+      },
+      {
+        "id": "народний",
+        "text": "народний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "корінний"
+    ],
+    "explanation": "Правильна відповідь тут - «КОРІННИЙ» Саме це слово зі списку є близьким за значенням до слова «Автохтонний».",
+    "page_images": [],
+    "source_pages": [
+      16
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0009"
+  },
+  {
+    "id": "2026-verbal-0074",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 74,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова модернізатор",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "реконструктор",
+        "text": "реконструктор",
+        "image": null
+      },
+      {
+        "id": "сучасник",
+        "text": "сучасник",
+        "image": null
+      },
+      {
+        "id": "руйнівник",
+        "text": "руйнівник",
+        "image": null
+      },
+      {
+        "id": "дослідник",
+        "text": "дослідник",
+        "image": null
+      },
+      {
+        "id": "консерватор",
+        "text": "консерватор",
+        "image": null
+      }
+    ],
+    "correct": [
+      "консерватор"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      16
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0075",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 75,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова марнославний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "славетний",
+        "text": "славетний",
+        "image": null
+      },
+      {
+        "id": "талановитий",
+        "text": "талановитий",
+        "image": null
+      },
+      {
+        "id": "скромний",
+        "text": "скромний",
+        "image": null
+      },
+      {
+        "id": "пишний",
+        "text": "пишний",
+        "image": null
+      },
+      {
+        "id": "зарозумілий",
+        "text": "зарозумілий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "скромний"
+    ],
+    "explanation": "Правильна відповідь тут - «СКРОМНИЙ» Саме це слово зі списку є протилежним за значенням до слова «Марнославний».",
+    "page_images": [],
+    "source_pages": [
+      17
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0144"
+  },
+  {
+    "id": "2026-verbal-0076",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 76,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова алегоричний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "тотожний",
+        "text": "тотожний",
+        "image": null
+      },
+      {
+        "id": "абстрактний",
+        "text": "абстрактний",
+        "image": null
+      },
+      {
+        "id": "риторичний",
+        "text": "риторичний",
+        "image": null
+      },
+      {
+        "id": "замаскований",
+        "text": "замаскований",
+        "image": null
+      },
+      {
+        "id": "категоричний",
+        "text": "категоричний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "замаскований"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      17
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0077",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 77,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова перманентний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "мінливий",
+        "text": "мінливий",
+        "image": null
+      },
+      {
+        "id": "однаковий",
+        "text": "однаковий",
+        "image": null
+      },
+      {
+        "id": "безперервний",
+        "text": "безперервний",
+        "image": null
+      },
+      {
+        "id": "тимчасовий",
+        "text": "тимчасовий",
+        "image": null
+      },
+      {
+        "id": "сезонний",
+        "text": "сезонний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "безперервний"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      17
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0078",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 78,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова брутальний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "вихований",
+        "text": "вихований",
+        "image": null
+      },
+      {
+        "id": "гуманний",
+        "text": "гуманний",
+        "image": null
+      },
+      {
+        "id": "пасивний",
+        "text": "пасивний",
+        "image": null
+      },
+      {
+        "id": "ніжний",
+        "text": "ніжний",
+        "image": null
+      },
+      {
+        "id": "ввічливий",
+        "text": "ввічливий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "ніжний"
+    ],
+    "explanation": "Правильна відповідь тут - «НІЖНИЙ» Саме це слово зі списку є протилежним за значенням до слова «Брутальний».",
+    "page_images": [],
+    "source_pages": [
+      17
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0092"
+  },
+  {
+    "id": "2026-verbal-0079",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 79,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова протеже",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "аташе",
+        "text": "аташе",
+        "image": null
+      },
+      {
+        "id": "улюбленець",
+        "text": "улюбленець",
+        "image": null
+      },
+      {
+        "id": "ворог",
+        "text": "ворог",
+        "image": null
+      },
+      {
+        "id": "помічник",
+        "text": "помічник",
+        "image": null
+      },
+      {
+        "id": "наставник",
+        "text": "наставник",
+        "image": null
+      }
+    ],
+    "correct": [
+      "улюбленець"
+    ],
+    "explanation": "Правильна відповідь тут - «УЛЮБЛЕНЕЦЬ» Саме це слово зі списку є близьким за значенням до слова «Протеже».",
+    "page_images": [],
+    "source_pages": [
+      18
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0006"
+  },
+  {
+    "id": "2026-verbal-0080",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 80,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова есенція",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "розчин",
+        "text": "розчин",
+        "image": null
+      },
+      {
+        "id": "аромат",
+        "text": "аромат",
+        "image": null
+      },
+      {
+        "id": "речовина",
+        "text": "речовина",
+        "image": null
+      },
+      {
+        "id": "газ",
+        "text": "газ",
+        "image": null
+      },
+      {
+        "id": "суміш",
+        "text": "суміш",
+        "image": null
+      }
+    ],
+    "correct": [
+      "розчин"
+    ],
+    "explanation": "Правильна відповідь тут - «РОЗЧИН» Саме це слово зі списку є близьким за значенням до слова «Есенція».",
+    "page_images": [],
+    "source_pages": [
+      18
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0101"
+  },
+  {
+    "id": "2026-verbal-0081",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 81,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова егіда",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "гасло",
+        "text": "гасло",
+        "image": null
+      },
+      {
+        "id": "прапор",
+        "text": "прапор",
+        "image": null
+      },
+      {
+        "id": "протекція",
+        "text": "протекція",
+        "image": null
+      },
+      {
+        "id": "ідея",
+        "text": "ідея",
+        "image": null
+      },
+      {
+        "id": "сентенція",
+        "text": "сентенція",
+        "image": null
+      }
+    ],
+    "correct": [
+      "протекція"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      18
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0082",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 82,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова екстраполяція",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "протиставлення",
+        "text": "протиставлення",
+        "image": null
+      },
+      {
+        "id": "висновок",
+        "text": "висновок",
+        "image": null
+      },
+      {
+        "id": "інтерполяція",
+        "text": "інтерполяція",
+        "image": null
+      },
+      {
+        "id": "перенесення",
+        "text": "перенесення",
+        "image": null
+      },
+      {
+        "id": "моделювання",
+        "text": "моделювання",
+        "image": null
+      }
+    ],
+    "correct": [
+      "перенесення"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      18
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0083",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 83,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова ентропійний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "прихований",
+        "text": "прихований",
+        "image": null
+      },
+      {
+        "id": "функціональний",
+        "text": "функціональний",
+        "image": null
+      },
+      {
+        "id": "відпрацьований",
+        "text": "відпрацьований",
+        "image": null
+      },
+      {
+        "id": "впорядкований",
+        "text": "впорядкований",
+        "image": null
+      },
+      {
+        "id": "максимальний",
+        "text": "максимальний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "впорядкований"
+    ],
+    "explanation": "Правильна відповідь тут - «ВПОРЯДКОВАНИЙ» Саме це слово зі списку є протилежним за значенням до слова «Ентропійний».",
+    "page_images": [],
+    "source_pages": [
+      19
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0142"
+  },
+  {
+    "id": "2026-verbal-0084",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 84,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова заангажований",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "найнятий",
+        "text": "найнятий",
+        "image": null
+      },
+      {
+        "id": "завербований",
+        "text": "завербований",
+        "image": null
+      },
+      {
+        "id": "необ’єктивний",
+        "text": "необ’єктивний",
+        "image": null
+      },
+      {
+        "id": "пихатий",
+        "text": "пихатий",
+        "image": null
+      },
+      {
+        "id": "хитромудрий",
+        "text": "хитромудрий",
+        "image": null
+      }
+    ],
+    "correct": [
+      "найнятий"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      19
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-verbal-0085",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 85,
+    "subtype": "synonym",
+    "prompt": "Визначте слово, найбільш близьке за значенням до слова докторальний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "науковий",
+        "text": "науковий",
+        "image": null
+      },
+      {
+        "id": "поважний",
+        "text": "поважний",
+        "image": null
+      },
+      {
+        "id": "неоднозначний",
+        "text": "неоднозначний",
+        "image": null
+      },
+      {
+        "id": "медичний",
+        "text": "медичний",
+        "image": null
+      },
+      {
+        "id": "категоричний",
+        "text": "категоричний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "категоричний"
+    ],
+    "explanation": "Правильна відповідь тут - «КАТЕГОРИЧНИЙ» Саме це слово зі списку є близьким за значенням до слова «Докторальний».",
+    "page_images": [],
+    "source_pages": [
+      19
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-verbal-gold-0083"
+  },
+  {
+    "id": "2026-verbal-0086",
+    "library": "2026",
+    "block": "verbal",
+    "source": "verbal",
+    "source_title": "Вербальний",
+    "source_order": 1,
+    "number": 86,
+    "subtype": "antonym",
+    "prompt": "Визначте слово, протилежне за значенням до слова аморфний",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "цільний",
+        "text": "цільний",
+        "image": null
+      },
+      {
+        "id": "кристалічний",
+        "text": "кристалічний",
+        "image": null
+      },
+      {
+        "id": "стійкий",
+        "text": "стійкий",
+        "image": null
+      },
+      {
+        "id": "розпливчастий",
+        "text": "розпливчастий",
+        "image": null
+      },
+      {
+        "id": "надійний",
+        "text": "надійний",
+        "image": null
+      }
+    ],
+    "correct": [
+      "кристалічний"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      19
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0001",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 1,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0001-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0001-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0001-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0001-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0001-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0001-5.png"
+      }
+    ],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0002",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 2,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0002-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0002-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0002-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0002-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0002-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0002-5.png"
+      }
+    ],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0003",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 3,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0003-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0003-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0003-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0003-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0003-4.png"
+      }
+    ],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0004",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 4,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0004-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0004-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0004-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0004-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0004-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0004-5.png"
+      }
+    ],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0005",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 5,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0005-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0005-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0005-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0005-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0005-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0005-5.png"
+      }
+    ],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0006",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 6,
+    "subtype": "sequence",
+    "prompt": "Яка з представлених нижче фігур доповнює послідовність?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0006-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0006-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0006-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0006-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0006-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0006-5.png"
+      }
+    ],
+    "correct": [
+      "3"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0007",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 7,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0007-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0007-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0007-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0007-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0007-5.png"
+      }
+    ],
+    "correct": [
+      "3"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0008",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 8,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0008-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0008-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0008-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0008-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0008-5.png"
+      }
+    ],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0009",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 9,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0009-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0009-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0009-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0009-4.png"
+      }
+    ],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0010",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 10,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0010-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0010-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0010-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0010-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0010-5.png"
+      }
+    ],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0011",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 11,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0011-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0011-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0011-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0011-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0011-5.png"
+      }
+    ],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0012",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 12,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0012-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0012-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0012-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0012-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0012-5.png"
+      }
+    ],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0013",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 13,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0013-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0013-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0013-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0013-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0013-5.png"
+      }
+    ],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0014",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 14,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0014-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0014-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0014-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0014-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0014-5.png"
+      }
+    ],
+    "correct": [
+      "5"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0015",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 15,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0015-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0015-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0015-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0015-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0015-5.png"
+      }
+    ],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0016",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 16,
+    "subtype": "odd-one-out",
+    "prompt": "Визначте, яка з фігур є зайвою:",
+    "interaction": "single",
+    "stimulus_images": [],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0016-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0016-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0016-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0016-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0016-5.png"
+      }
+    ],
+    "correct": [
+      "5"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0017",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 17,
+    "subtype": "transformation",
+    "prompt": "Як повинна змінитися нижня фігура?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0017-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0017-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0017-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0017-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0017-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0017-5.png"
+      }
+    ],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0018",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 18,
+    "subtype": "transformation",
+    "prompt": "Як повинна змінитися нижня фігура?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0018-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0018-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0018-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0018-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0018-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0018-5.png"
+      }
+    ],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0019",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 19,
+    "subtype": "transformation",
+    "prompt": "Як повинна змінитися нижня фігура?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0019-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0019-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0019-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0019-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0019-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0019-5.png"
+      }
+    ],
+    "correct": [
+      "3"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0020",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 20,
+    "subtype": "transformation",
+    "prompt": "Як повинна змінитися нижня фігура?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0020-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0020-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0020-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0020-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0020-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0020-5.png"
+      }
+    ],
+    "correct": [
+      "5"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-abstract-0021",
+    "library": "2026",
+    "block": "abstract",
+    "source": "abstract",
+    "source_title": "Абстрактно-логічний",
+    "source_order": 2,
+    "number": 21,
+    "subtype": "transformation",
+    "prompt": "Як повинна змінитися нижня фігура?",
+    "interaction": "single",
+    "stimulus_images": [
+      "data/raw/sap2026/abstract/q0021-stimulus.png"
+    ],
+    "options": [
+      {
+        "id": "1",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0021-1.png"
+      },
+      {
+        "id": "2",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0021-2.png"
+      },
+      {
+        "id": "3",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0021-3.png"
+      },
+      {
+        "id": "4",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0021-4.png"
+      },
+      {
+        "id": "5",
+        "text": null,
+        "image": "data/raw/sap2026/abstract/q0021-5.png"
+      }
+    ],
+    "correct": [
+      "3"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0001",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 1,
+    "subtype": "number-sequence",
+    "prompt": "Доповніть числову послідовність: 16; 31; 60; ...; 230; 455",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "117"
+    ],
+    "explanation": "Задана послідовність чисел побудована за таким правилом: кожне число збільшується в 2 рази та зменьшується на 1, після чого цикл повторюється з іншими числами, але зменшення з кожним наступним числом збільшується також на 1. Відповідно: 16*2-1=31*2-1-1=60*2-1-1-1=117 і т.д.. Правильна відповідь: 117.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0046"
+  },
+  {
+    "id": "2026-math-0002",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 2,
+    "subtype": "number-sequence",
+    "prompt": "Доповніть числову послідовність: 6; 14; 30; ...; 126; 254; 510",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "62"
+    ],
+    "explanation": "Задана послідовність чисел побудована за таким правилом: кожне число збільшується в 2 рази та на 2, після чого цикл повторюється з іншими числами. Відповідно: 6*2+2=14*2+2=30*2+2=62 і т.д.. Правильна відповідь: 62.",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0041"
+  },
+  {
+    "id": "2026-math-0003",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 3,
+    "subtype": "number-grid",
+    "prompt": "Підставте потрібне число у порожній сектор:",
+    "interaction": "numeric",
+    "stimulus_images": [
+      "data/raw/sap2026/math/q0003-stimulus.png"
+    ],
+    "options": [],
+    "correct": [
+      "7"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      1
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0004",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 4,
+    "subtype": "number-grid",
+    "prompt": "Підставте потрібне число у порожній сектор:",
+    "interaction": "numeric",
+    "stimulus_images": [
+      "data/raw/sap2026/math/q0004-stimulus.png"
+    ],
+    "options": [],
+    "correct": [
+      "14"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0005",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 5,
+    "subtype": "number-grid",
+    "prompt": "Підставте потрібне число у порожню клітинку:",
+    "interaction": "numeric",
+    "stimulus_images": [
+      "data/raw/sap2026/math/q0005-stimulus.png"
+    ],
+    "options": [],
+    "correct": [
+      "92"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0006",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 6,
+    "subtype": "number-grid",
+    "prompt": "Підставте потрібне число у порожню клітинку:",
+    "interaction": "numeric",
+    "stimulus_images": [
+      "data/raw/sap2026/math/q0006-stimulus.png"
+    ],
+    "options": [],
+    "correct": [
+      "24"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      2
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0007",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 7,
+    "subtype": "number-sequence",
+    "prompt": "Доповніть числову послідовність: 1; 3; 5; 7; 9; ...",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "11"
+    ],
+    "explanation": "Задана послідовність чисел побудована за таким правилом: різниця між першим там другим числами дорівнює 2. Відповідно: 1+2=3+2=5+2=7 та т.д. 9+2=11. Правильна відповідь: 11.",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0023"
+  },
+  {
+    "id": "2026-math-0008",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 8,
+    "subtype": "number-grid",
+    "prompt": "Підставте потрібне число у порожній сектор:",
+    "interaction": "numeric",
+    "stimulus_images": [
+      "data/raw/sap2026/math/q0008-stimulus.png"
+    ],
+    "options": [],
+    "correct": [
+      "8"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      3
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0009",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 9,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення m, якщо: m + 10 = 3 × 4",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0010",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 10,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення a, якщо: a + a = 3 + 5",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0011",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 11,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: 2x − 6 = 15 + x",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "21"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      4
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0012",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 12,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення z, якщо: z − 6 = 26 + 9",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "41"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0013",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 13,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення d, якщо: 121 − d = 10d − 33",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "14"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0014",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 14,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення a, якщо: 2a + 7a = 100 − a",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "10"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      5
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0015",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 15,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: 25 − 2x = 3x − 15",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "8"
+    ],
+    "explanation": "25 - 2X = 3X - 15 Переносимо числа ліворуч, а буквенні вирази праворуч: 25 + 15 = 3X + 2X Робимо усі математичні дії зі знаками: 40 = 5X 5X = 40 X = 40 : 5 X = 8 Відповідь: 8",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0146"
+  },
+  {
+    "id": "2026-math-0016",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 16,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення b, якщо: 4b + 12 = 3 × (b + 6)",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "6"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0017",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 17,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення d, якщо: d × 2 = 128 ÷ 32",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "2"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      6
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0018",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 18,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення z, якщо: 3z × 7 = 29 − 8",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0019",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 19,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення y, якщо: 5y + 4 = 24 + y",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "5"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0020",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 20,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: 72 − x = 102 ÷ 3",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "38"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      7
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0021",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 21,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення k, якщо: 19k + 6 = 164 ÷ 2",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0022",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 22,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення z, якщо: 0,2 − z = 3 ÷ 4 − 3z ÷ 0,5",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "0,11"
+    ],
+    "explanation": "0,2 - z = 3/4 - z * 3/0.5 0,2 - z = 0,75 - z * 6 0,2 - z = 0,75 - 6z Переносимо числа праворуч, а буквенні вирази ліворуч: -z + 6z = 0,75 - 0,2 5z = 0,55 z = 0,55 : 5 z = 0,11 Відповідь: 0,11",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0004"
+  },
+  {
+    "id": "2026-math-0023",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 23,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення y, якщо: 10y ÷ (10 − y) = 10 × 4",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "8"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      8
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0024",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 24,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення c, якщо: 0,125c³ = 1 ÷ 8",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "1"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0025",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 25,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення g, якщо: 3g − 61 = 44 − 2g",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "21"
+    ],
+    "explanation": "3g - 61 = 44 - 2g Переносимо числа праворуч, а буквенні вирази ліворуч: 3g + 2g = 44 + 61 Робимо усі математичні дії зі знаками: 5g = 105 g = 105 : 5 g = 21 Відповідь: 21",
+    "page_images": [],
+    "source_pages": [
+      9
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0047"
+  },
+  {
+    "id": "2026-math-0026",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 26,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення s, якщо: 0,5s × 8 = 3s + 12",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "12"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0027",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 27,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення b, якщо: 2b + 6 = 1 ÷ 3 × 7b",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "18"
+    ],
+    "explanation": "2b + 6 = 1/3 * 7b 2b + 6 = 7b/3 Перемножуємо дві частини на 3, щоб звільнити b: 2b * 3 + 6 * 3 = 7b/3 * 3 6b + 18 = 7b Переносимо числа ліворуч, а буквенні вирази праворуч: 18 = 7b - 6b b = 18 Відповідь: 18",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0085"
+  },
+  {
+    "id": "2026-math-0028",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 28,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення a, якщо: a + 2 = 16 − 2,5a",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0029",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 29,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення a, якщо: 3,5a + 8 = 54 ÷ 3 − 1,5a",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "2"
+    ],
+    "explanation": "3,5a + 8 = 54 : 3 - 1,5a 3,5a + 8 = 18 - 1,5a Переносимо числа праворуч, а буквенні вирази ліворуч: 3,5a + 1,5a = 18 - 8 5a = 10 a = 10 : 5 a = 2 Відповідь: 2",
+    "page_images": [],
+    "source_pages": [
+      10
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0114"
+  },
+  {
+    "id": "2026-math-0030",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 30,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: (2x − 40) ÷ (6 − 2x) = 4 ÷ (1 − 0,5)²",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "4"
+    ],
+    "explanation": "(2X - 40) : (6 - 2X) = 4 : (1 - 0,5)² (2X - 40) : (6 - 2X) = 4 : 0,25 (2X - 40) : (6 - 2X) = 16 Перемножуємо обидві частини навхрест: 2X - 40 = 16 * (6 - 2X) 2X - 40 = 96 - 32X Переносимо числа праворуч, а буквенні вирази ліворуч: 2X + 32X = 96 + 40 34X = 136 X = 136 : 34 X = 4 Відповідь: 4",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0119"
+  },
+  {
+    "id": "2026-math-0031",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 31,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: (x − 25) ÷ (3² − 2x) = 3 ÷ 4",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "12,7"
+    ],
+    "explanation": "(X - 25) / (3² - 2X) = 3 / 4 (X - 25) / (9 - 2X) = 3 / 4 Перемножуємо обидві частини навхрест: 3 * (9 - 2X) = 4 * (X - 25) 27 - 6X = 4X - 100 Переносимо числа ліворуч, а буквенні вирази праворуч: 27 + 100 = 4X + 6X 127 = 10X 10X = 127 X = 127 : 10 X = 12,7 Відповідь: 12,7",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0125"
+  },
+  {
+    "id": "2026-math-0032",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 32,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення v, якщо: (15v − 6) ÷ (10 − 2v) = 3 × 3²",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "4"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0033",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 33,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення v, якщо: 11 × (2v − 6²) = 2,5v + 1,5v",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "22"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      11
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0034",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 34,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення f, якщо: 42 × (f + 12) = f × 145 − 11",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "5"
+    ],
+    "explanation": "",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": null
+  },
+  {
+    "id": "2026-math-0035",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 35,
+    "subtype": "equation",
+    "prompt": "Знайдіть значення x, якщо: x × 57 − 24 = 14(x + 29)",
+    "interaction": "numeric",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "10"
+    ],
+    "explanation": "X * 57 - 24 = 14(X + 29) 57X - 24 = 14X + 406 Переносимо числа праворуч, а буквенні вирази ліворуч: 57X - 14X = 406 + 24 43x = 430 x = 430 : 43 x = 10 Відповідь: 10",
+    "page_images": [],
+    "source_pages": [
+      12
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0033"
+  },
+  {
+    "id": "2026-math-0036",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 36,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 27 □ 15 □ 2 = 10",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "27 - 15 - 2 = 10"
+    ],
+    "explanation": "Правильна відповідь: 27 - 15 - 2 = 10. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0059"
+  },
+  {
+    "id": "2026-math-0037",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 37,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 8 □ 3 □ 11 = 1",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "8 + 3 / 11 = 1"
+    ],
+    "explanation": "Правильна відповідь: 8 + 3 / 11 = 1. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0124"
+  },
+  {
+    "id": "2026-math-0038",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 38,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 11 □ 3 □ 8 = 6",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "11 + 3 - 8 = 6"
+    ],
+    "explanation": "Правильна відповідь: 11 + 3 - 8 = 6. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      13
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0016"
+  },
+  {
+    "id": "2026-math-0039",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 39,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 95 □ 5 □ 18 = 5",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "95 - 5 / 18 = 5"
+    ],
+    "explanation": "Правильна відповідь: 95 - 5 / 18 = 5. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0120"
+  },
+  {
+    "id": "2026-math-0040",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 40,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 15 □ 3 □ 2 □ 7 = 21",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "15 / 3 - 2 * 7 = 21"
+    ],
+    "explanation": "Правильна відповідь: 15 / 3 - 2 * 7 = 21. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0103"
+  },
+  {
+    "id": "2026-math-0041",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 41,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 625 □ 25 □ 6 = 31",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "625 / 25 + 6 = 31"
+    ],
+    "explanation": "Правильна відповідь: 625 / 25 + 6 = 31. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      14
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0019"
+  },
+  {
+    "id": "2026-math-0042",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 42,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 16 □ 7 □ 5 □ 4 = 16",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "16 - 7 - 5 * 4 = 16"
+    ],
+    "explanation": "Правильна відповідь: 16 - 7 - 5 * 4 = 16. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0154"
+  },
+  {
+    "id": "2026-math-0043",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 43,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 7 □ 7 □ 2 □ 54 = 44",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "7 * 7 * 2 - 54 = 44"
+    ],
+    "explanation": "Правильна відповідь: 7 * 7 * 2 - 54 = 44. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0065"
+  },
+  {
+    "id": "2026-math-0044",
+    "library": "2026",
+    "block": "math",
+    "source": "math",
+    "source_title": "Математичний",
+    "source_order": 3,
+    "number": 44,
+    "subtype": "operators",
+    "prompt": "Підставте у числовий вираз потрібні арифметичні операції: 32 □ 4 □ 12 □ 9 = 27",
+    "interaction": "expression",
+    "stimulus_images": [],
+    "options": [],
+    "correct": [
+      "32 + 4 / 12 * 9 = 27"
+    ],
+    "explanation": "Правильна відповідь: 32 + 4 / 12 * 9 = 27. Зверніть увагу! Для завдань цього типу правило, за яким у виразі насамперед виконується множення та ділення, недійсне! Всі операції у числовому виразу треба виконувати в порядку їх слідування. + * ÷ + * ÷ + * ÷",
+    "page_images": [],
+    "source_pages": [
+      15
+    ],
+    "confidence": "high",
+    "issues": [],
+    "duplicate_of": "2025-math-0143"
   }
 ]

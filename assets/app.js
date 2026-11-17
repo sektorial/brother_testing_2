@@ -8,6 +8,7 @@
     { id: "psymetrics-2021", title: "Psymetrics 2021" },
     { id: "psymetrics-2022", title: "Psymetrics test 2022" },
     { id: "startexam-2022", title: "StartExam 2022" },
+    { id: "2026", title: "САП 2026" },
   ];
   const CATEGORIES = [
     { id: "verbal", title: "Вербальний блок", minutes: 8 },
